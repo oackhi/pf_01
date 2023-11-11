@@ -26,7 +26,7 @@
                         </ul>
                     </nav>
                 </div>
-                <a href="" class="l-header__logo">u</a>
+                <a href="" class="l-header__logo"></a>
                 <div class="l-header__link">
                     <nav>
                         <ul>
@@ -45,11 +45,12 @@
                     <br>いつでも自然と繋がれる
                 </p>
             </div>
-            <a href="#about" class="about"></a>
+            <a href="#about" class="about">↓</a>
         </header>
         <section class="l-about" id="about">
             <div class="l-about__img"></div>
             <div class="l-about__text">
+                <img src="./assets/images/about.png" class="c-about__icon"/>
                 <h2>
                     野菜を育てる楽しさ、
                     <br>食べる喜び。
@@ -72,21 +73,21 @@
         <section class="l-pickup">
             <h2 class="l-pickup__title">PICK UP CONTENTS</h2>
             <ul class="p-pickup__slider">
-                <li class="p-pickup__contents">
+                <li class="p-pickup__contents c-starterset">
                     <div class="p-text">
                         <h2>ABOUT STARTER SET</h2>
                         <p>UETEスターターセットの中身</p>
                         <button type="button" onclick="">チェックする</button>
                     </div>
                 </li>
-                <li class="p-pickup__contents">
+                <li class="p-pickup__contents c-howto">
                     <div class="p-text">
                         <h2>HOW TO GROW</h2>
                         <p>野菜の育て方</p>
                         <button type="button" onclick="">詳しく見る</button>
                     </div>
                 </li>
-                <li class="p-pickup__contents">
+                <li class="p-pickup__contents c-newitems">
                     <div class="p-text">
                         <h2>NEW ITEMS!!</h2>
                         <p>春から育てられる商品はこちら</p>
@@ -100,11 +101,11 @@
                 <h2>ALL ITEMS</h2>
                 <p>すべての商品</p>
                 <button type="button" onclick="">VIEW ALL</button>
-                <img src="" class="c-allitems__icon" />
+                <img src="./assets/images/allitem.png" class="c-allitems__icon" />
             </div>
             <div class="l-allitems__list">
                 <a href="" class="l-allitems__contents">
-                    <div class="c-allitems__img">
+                    <div class="c-allitems__img c-allitems1">
                         <div class="c-allitems__img-text"></div>
                     </div>
                     <div class="c-allitems__text">
@@ -113,7 +114,7 @@
                     </div>
                 </a>
                 <a href="" class="l-allitems__contents">
-                    <div class="c-allitems__img">
+                    <div class="c-allitems__img c-allitems2">
                         <div class="c-allitems__img-text"></div>
                     </div>
                     <div class="c-allitems__text">
@@ -131,7 +132,7 @@
             <ul class="p-magazine__contents">
                 <li>
                     <a href="">
-                        <img src="./assets/images/top.jpg" />
+                        <div class="c-magazine__img c-magazine1"></div>
                         <p class="c-date">2023.11.01</p>
                         <h2 class="c-magazine__title">
                             積水ハウスオーナー様限定サービス「SUITE CONCIER」サービス開始のお知らせ
@@ -145,7 +146,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="" />
+                        <div class="c-magazine__img c-magazine2"></div>
                         <p class="c-date">2023.10.30</p>
                         <h2 class="c-magazine__title">
                             公式Instagramで「いちご スターターセット」に使えるクーポン配布中！
@@ -158,7 +159,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src="" />
+                        <div class="c-magazine__img c-magazine3"></div>
                         <p class="c-date">2023.10.13</p>
                         <h2 class="c-magazine__title">
                             2023年度 秋冬の販売スケジュール
@@ -186,26 +187,24 @@
             <div class="l-footer__contents">
                 <div class="l-footer__left">
                     <a href="" class="l-footer__logo">
-                        <img srac="" />
+                        <img src="./assets/images/site_icon.png" />
                     </a>
                     <a href="" class="l-footer__instagram">
-                        <img src="" />
+                        <img src="./assets/images/icon_instgram.png" />
                     </a>
                 </div>
                 <div class="l-footer__center">
-                    <ul>
-                        <li><a href="">家庭菜園UETE トップ</a></li>
-                        <li><a href="">コンセプト</a></li>
-                        <li><a href="">記事一覧</a></li>
-                        <li><a href="">商品一覧</a></li>
-                        <li><a href="">ご利用ガイド</a></li>
-                        <li><a href="">よくある質問</a></li>
-                        <li><a href="">お問い合わせ</a></li>
-                        <li><a href="">プライバシーポリシー</a></li>
-                        <li><a href="">取引規定</a></li>
-                        <li><a href="">特定商標に基づく表記</a></li>
-                        <li><a href="">利用規約</a></li>
-                    </ul>
+                    <a href="">家庭菜園UETE トップ</a>
+                    <a href="">コンセプト</a>
+                    <a href="">記事一覧</a>
+                    <a href="">商品一覧</a>
+                    <a href="">ご利用ガイド</a>
+                    <a href="">よくある質問</a>
+                    <a href="">お問い合わせ</a>
+                    <a href="">プライバシーポリシー</a>
+                    <a href="">取引規定</a>
+                    <a href="">特定商標に基づく表記</a>
+                    <a href="">利用規約</a>
                 </div>
                 <div class="l-footer__signup">
                     <p>メールマガジンに登録して、最新情報をチェック</p>
@@ -213,29 +212,8 @@
                     <input type="submit" id="sendemail" value="登録">
                 </div>
             </div>
-            <div class="l-footer__bottom">
-                <div class="l-footer__copyright">
-                    &copy; &CO.,LTD
-                    <br>powered by shopify
-                </div>
-                <div class="l-footer__payment">
-                    <ul>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                    </ul>
-                </div>
+            <div class="l-footer__copyright">
+                &copy; &CO.,LTD powered by shopify
             </div>
         </footer>
     </div>

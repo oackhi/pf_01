@@ -1,3 +1,4 @@
 $('.p-pickup__slider').slick({
-    arrows: false
+    arrows: false,
+    variableWidth: true
 });

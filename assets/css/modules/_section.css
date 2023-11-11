@@ -2,14 +2,27 @@
 .l-about {
     display: flex;
     padding: 80px 100px 0 100px;
+    height: 420px;
+    position: relative;
 }
 
 .l-about__img {
-    width: 50%;
+    width: calc(100% / 2);
+    height: auto;
+    background-image: url("../../images/about.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.c-about__icon {
+    position: absolute;
+    top:80px;
+    right: 100px;
+    width: 18vw;
 }
 
 .l-about__text {
-    width: 50%;
     margin-left: 60px;
     font-size: 18px;
     line-height: 30px;
@@ -22,6 +35,7 @@
 }
 
 .l-about__text button {
+    position: relative;
     width: 230px;
     padding: 15px 8px;
     background-color: #fff;
@@ -32,13 +46,15 @@
 }
 
 .l-about__text button::after {
+    position: absolute;
+    right: 5px;
     content: "→";
-    float: right;
     font-size: 15px;
 }
 
 /* pickup contents */
 .l-pickup {
+    padding-top: 80px;
     padding-left: 100px;
 }
 
@@ -50,12 +66,18 @@
 .p-pickup__contents {
     position: relative;
     display: flex;
-    width: 70vw;
+    width: 65vw;
     height: 50vw;
     margin-right: 20px;
     font-size: 25px;
     color: #fff;
     background-color: gray;/*消す*/
+    border-radius: 25px;
+}
+
+.c-howto {
+    background-image: url(../../images/content_howto.jpg);
+    background-size: cover;
 }
 
 .p-text {
@@ -70,9 +92,11 @@
 }
 
 .p-pickup__slider button {
+    position: relative;
     width: 150px;
     padding: 10px 3px;
     border-radius: 5px;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: bold;
     text-align: center;
@@ -80,8 +104,9 @@
 }
 
 .p-pickup__slider button::after {
+    position: absolute;
+    right: 5px;
     content:"→";
-    float: right;
 }
 
 /* allitems */
@@ -91,6 +116,8 @@
 }
 
 .l-allitems__title {
+    position: relative;
+    width: 30%;
     line-height: 50px;
 }
 
@@ -103,7 +130,8 @@
 }
 
 .l-allitems__title button {
-    width: 230px;
+    position: relative;
+    width: 22vw;
     padding: 15px 8px;
     background-color: #fff;
     border-radius: 5px;
@@ -114,15 +142,26 @@
 
 .l-allitems__title button:after {
     content:"→";
-    float: right;
+    position: absolute;
+    right: 1vw;
+}
+
+.c-allitems__icon {
+    width: 18vw;
+    height: auto;
+    position: absolute;
+    bottom: 1vw;
+    left: 2vw;
 }
 
 .l-allitems__list {
     display: flex;
+    width: 70%;
 }
 
 .l-allitems__contents {
     margin-right: 30px;
+    width: 30vw;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -130,14 +169,24 @@
 
 .c-allitems__img {
     position:relative;
-    width: 380px;
-    height: 280px;
+    width: auto;
+    height: 20vw;
     border-radius: 10px;
+    background-size: cover;
+}
+
+.c-allitems1 {
+    background-image: url("../../images/allitem_herb1.jpg");
+}
+
+.c-allitems2 {
+    background-image: url("../../images/allitem_strawberry2.jpg");
 }
 
 .c-allitems__img-text {
     position: relative;
     width: 100px;
+    height: auto;
     top: 10%;
     left: 10%;
     padding: 8px 5px;
@@ -204,9 +253,25 @@
     text-decoration: none;
 }
 
-.p-magazine__contents img {
+.c-magazine__img {
     width: auto;
-    height: 230px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.c-magazine1 {
+    background-size: cover;
+    background-image: url("../../images/allitem_paseri1.jpg");
+}
+
+.c-magazine2 {
+    background-size: cover;
+    background-image: url("../../assets/images/schedule.jpg");
+}
+
+.c-magazine3 {
+    background-size: cover;
+    background-image: url("../../assets/images/schedule.jpg");
 }
 
 .c-date {
@@ -238,6 +303,7 @@
 }
 
 .l-magazine__link button {
+    position: relative;
     width: 230px;
     padding: 15px 8px;
     background-color: #fff;
@@ -248,7 +314,8 @@
 
 .l-magazine__link button:after {
     content:"→";
-    float: right;
+    position: absolute;
+    right: 10px;
 }
 
 /* relationship */
