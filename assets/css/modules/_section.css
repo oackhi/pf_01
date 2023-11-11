@@ -1,0 +1,277 @@
+/* about */
+.l-about {
+    display: flex;
+    padding: 80px 100px 0 100px;
+}
+
+.l-about__img {
+    width: 50%;
+}
+
+.l-about__text {
+    width: 50%;
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.l-about__text p { 
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 25px
+}
+
+.l-about__text button {
+    width: 230px;
+    padding: 15px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.l-about__text button::after {
+    content: "→";
+    float: right;
+    font-size: 15px;
+}
+
+/* pickup contents */
+.l-pickup {
+    padding-left: 100px;
+}
+
+.l-pickup__title {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.p-pickup__contents {
+    position: relative;
+    display: flex;
+    width: 70vw;
+    height: 50vw;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #fff;
+    background-color: gray;/*消す*/
+}
+
+.p-text {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    line-height: 50px;
+}
+
+.p-text p {
+    font-size: 15px;
+}
+
+.p-pickup__slider button {
+    width: 150px;
+    padding: 10px 3px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    background: none;
+}
+
+.p-pickup__slider button::after {
+    content:"→";
+    float: right;
+}
+
+/* allitems */
+.l-allitems {
+    display: flex;
+    padding: 80px 100px;
+}
+
+.l-allitems__title {
+    line-height: 50px;
+}
+
+.l-allitems__title h2 {
+    font-size: 30px
+}
+
+.l-allitems__title p {
+    font-size: 13px;
+}
+
+.l-allitems__title button {
+    width: 230px;
+    padding: 15px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.l-allitems__title button:after {
+    content:"→";
+    float: right;
+}
+
+.l-allitems__list {
+    display: flex;
+}
+
+.l-allitems__contents {
+    margin-right: 30px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.c-allitems__img {
+    position:relative;
+    width: 380px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.c-allitems__img-text {
+    position: relative;
+    width: 100px;
+    top: 10%;
+    left: 10%;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: gray;
+    outline: 1px solid #fff;
+    border-radius: 10px;
+    outline-offset: -4px;
+}
+
+.c-allitems__img-text::before {
+    content: "今すぐ育てられる";
+    
+}
+
+.c-allitems__text {
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.c-allitems__value {
+    margin-top: 10px;
+}
+
+/* magazine */
+.l-magazine {
+    padding: 80px 50px;
+    background-color: #fff;
+}
+
+.l-magazine__title {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.l-magazine__title h2 {
+    font-size: 30px
+}
+
+.l-magazine__title p {
+    font-size: 13px;
+}
+
+.p-magazine__contents {
+    display: flex;
+}
+
+.p-magazine__contents li {
+    width : calc(100% / 3) ;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.p-magazine__contents li:last-child {
+    margin: 0;
+}
+
+.p-magazine__contents a {
+    color: #000;
+    text-decoration: none;
+}
+
+.p-magazine__contents img {
+    width: auto;
+    height: 230px;
+}
+
+.c-date {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.c-magazine__title {
+    margin: 15px 0;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.c-magazine__text {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.c-magazine__link {
+    font-size: 14px;
+    border-bottom:1px solid;
+    display: inline-block;
+}
+
+.l-magazine__link {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.l-magazine__link button {
+    width: 230px;
+    padding: 15px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.l-magazine__link button:after {
+    content:"→";
+    float: right;
+}
+
+/* relationship */
+.l-relationship {
+    padding: 80px 50px;
+    background-color: #fff;
+}
+
+.l-relationship__title {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.c-instagram {
+    font-size: 13px;
+    /*画像入れる */
+}
+
+.c-relationship__title{
+    font-size: 30px
+}
+
+.c-relationship__text {
+    font-size: 13px;
+}
