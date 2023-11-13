@@ -10,30 +10,18 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.250);
+    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     width: 100%;
     height: 70px;
-    padding: 10px 20px;
+    padding: 20px 50px;
     z-index: 999;
     box-sizing: border-box;
 }
 
-
-
-/* 750px下回ったらheader大きさ変わる（文字、logo大きさ）
-   990px下回ったら左:menu、右::login,cart
-   1097px超えたら全部表示、1096pxで記事一覧消える */
-   
-
 .l-header__top a {
     color: #fff;
     text-decoration: none;
-}
-
-.l-header__menu,
-.l-header__link {
-    width: 30%;
 }
 
 .l-header__menu ul {
@@ -50,18 +38,37 @@ header {
     display: flex;
 }
 
-.l-header__menu li,
-.l-header__link li {
-    margin-right: 1vw;
-}
-
 .l-header__menu li:last-child,
 .l-header__link li:last-child {
     margin-right: 0;
 }
 
-.l-header__logo a {
-    background-image: url("");
+.l-header__menu li {
+    font-size: 17px;
+    margin-right: 3vw;
+}
+
+.l-header__link li {
+    margin-right: 1vw;
+    font-size:13px;
+    padding-left: 18px;
+    background-size: 15px;
+}
+
+.c-link__contact {
+    background: url(../../images/icon_contact.png) left 0 top -1px no-repeat;
+}
+
+.c-link__search {
+    background: url(../../images/icon_search.png) left 0 top -1px no-repeat;
+}
+
+.c-link__login {
+    background: url(../../images/icon_login.png) left 0 top -1px no-repeat;
+}
+
+.c-link__cart {
+    background: url(../../images/icon_cart.png) left 0 top -1px no-repeat;
 }
 
 .l-header__text {
@@ -89,4 +96,20 @@ header {
     color: #fff;
     font-size: 50px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+    .l-header__menu li:nth-of-type(n+2),
+    .l-header__link li:first-child,
+    .l-header__link li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+    .l-header__menu li:first-child {
+        display: none;
+    }
 }

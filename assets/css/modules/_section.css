@@ -1,29 +1,19 @@
 /* about */
 .l-about {
-    display: flex;
-    padding: 80px 100px 0 100px;
-    height: 420px;
     position: relative;
 }
 
-.l-about__img {
-    width: calc(100% / 2);
+.l-about__img img{
     height: auto;
-    background-image: url("../../images/about.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
-.c-about__icon {
+.c-about__illust {
     position: absolute;
-    top:80px;
-    right: 100px;
-    width: 18vw;
+    width: 20vw;
 }
 
 .l-about__text {
-    margin-left: 60px;
     font-size: 18px;
     line-height: 30px;
 }
@@ -53,11 +43,6 @@
 }
 
 /* pickup contents */
-.l-pickup {
-    padding-top: 80px;
-    padding-left: 100px;
-}
-
 .l-pickup__title {
     font-size: 30px;
     margin: 30px 0;
@@ -66,17 +51,24 @@
 .p-pickup__contents {
     position: relative;
     display: flex;
-    width: 65vw;
-    height: 50vw;
     margin-right: 20px;
     font-size: 25px;
     color: #fff;
-    background-color: gray;/*消す*/
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+.c-starterset {
+    background-image: url("../../images/pickup_01.jpg");
+    background-size: cover;
 }
 
 .c-howto {
-    background-image: url(../../images/content_howto.jpg);
+    background-image: url("../../images/pickup_02.jpg");
+    background-size: cover;
+}
+
+.c-newitems {
+    background-image: url("../../images/pickup_03.jpg");
     background-size: cover;
 }
 
@@ -93,7 +85,7 @@
 
 .p-pickup__slider button {
     position: relative;
-    width: 150px;
+    width: 160px;
     padding: 10px 3px;
     border-radius: 5px;
     border: 1px solid #fff;
@@ -110,17 +102,6 @@
 }
 
 /* allitems */
-.l-allitems {
-    display: flex;
-    padding: 80px 100px;
-}
-
-.l-allitems__title {
-    position: relative;
-    width: 30%;
-    line-height: 50px;
-}
-
 .l-allitems__title h2 {
     font-size: 30px
 }
@@ -146,7 +127,7 @@
     right: 1vw;
 }
 
-.c-allitems__icon {
+.c-allitems__illust {
     width: 18vw;
     height: auto;
     position: absolute;
@@ -154,14 +135,7 @@
     left: 2vw;
 }
 
-.l-allitems__list {
-    display: flex;
-    width: 70%;
-}
-
 .l-allitems__contents {
-    margin-right: 30px;
-    width: 30vw;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -169,39 +143,31 @@
 
 .c-allitems__img {
     position:relative;
-    width: auto;
-    height: 20vw;
     border-radius: 10px;
     background-size: cover;
 }
 
 .c-allitems1 {
-    background-image: url("../../images/allitem_herb1.jpg");
+    background-image: url("../../images/allitem_herb01.jpg");
 }
 
 .c-allitems2 {
-    background-image: url("../../images/allitem_strawberry2.jpg");
+    background-image: url("../../images/allitem_strawberry01.jpg");
 }
 
 .c-allitems__img-text {
     position: relative;
-    width: 100px;
-    height: auto;
     top: 10%;
     left: 10%;
-    padding: 8px 5px;
     text-align: center;
-    font-size: 12px;
     color: #fff;
     background-color: gray;
     outline: 1px solid #fff;
-    border-radius: 10px;
     outline-offset: -4px;
 }
 
 .c-allitems__img-text::before {
     content: "今すぐ育てられる";
-    
 }
 
 .c-allitems__text {
@@ -255,23 +221,23 @@
 
 .c-magazine__img {
     width: auto;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
 }
 
 .c-magazine1 {
     background-size: cover;
-    background-image: url("../../images/allitem_paseri1.jpg");
+    background-image: url("../../images/magazine_01.jpg");
 }
 
 .c-magazine2 {
     background-size: cover;
-    background-image: url("../../assets/images/schedule.jpg");
+    background-image: url("../../images/magazine_02.jpg");
 }
 
 .c-magazine3 {
     background-size: cover;
-    background-image: url("../../assets/images/schedule.jpg");
+    background-image: url("../../images/magazine_03.jpg");
 }
 
 .c-date {
@@ -301,6 +267,7 @@
     justify-content: center;
     margin-top: 50px;
 }
+
 
 .l-magazine__link button {
     position: relative;
@@ -332,7 +299,16 @@
 
 .c-instagram {
     font-size: 13px;
-    /*画像入れる */
+}
+
+.c-instagram::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    background: url(../../images/icon_instgram.png) no-repeat;
+    background-size: contain;
+    transform: translate(4px,4px);
 }
 
 .c-relationship__title{
@@ -341,4 +317,232 @@
 
 .c-relationship__text {
     font-size: 13px;
+}
+
+.p-instagram__contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+}
+
+.p-instagram__contents a {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 3vw;
+    background-size: cover;
+    position: relative;
+}
+
+.p-instagram__contents a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.p-instagram__contents a:hover::before {
+    opacity: 1;
+    background-image: url(../../images/icon_instgram.png);
+    /* no-repeat 出来ない */
+    background-size: 3vw;
+}
+
+.p-instagram__contents a:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.p-instagram__contents a:nth-of-type(n+5) {
+    margin-top: 3vw;
+}
+
+.c-instagram__contents01 {
+    background-image: url("../../images/instagram_01.jpg");
+}
+
+.c-instagram__contents02 {
+    background-image: url("../../images/instagram_02.jpg");
+}
+
+.c-instagram__contents03 {
+    background-image: url("../../images/instagram_03.jpg");
+}
+
+.c-instagram__contents04 {
+    background-image: url("../../images/instagram_04.jpg");
+}
+
+.c-instagram__contents05 {
+    background-image: url("../../images/instagram_05.jpg");
+}
+
+.c-instagram__contents06 {
+    background-image: url("../../images/instagram_06.jpg");
+}
+
+.c-instagram__contents07 {
+    background-image: url("../../images/instagram_07.jpg");
+}
+
+.c-instagram__contents08 {
+    background-image: url("../../images/instagram_08.jpg");
+}
+
+@media screen and (max-width: 768px) {
+    /* SP style */
+
+    /* about */
+    .l-about {
+        padding: 5vw 10vw 0 10vw;
+        text-align: center;
+    }
+
+    .l-about__img {
+        height: auto;
+    }
+
+    .l-about__img img{
+        width: 550px;
+    }
+
+    .c-about__illust {
+        bottom: -12%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .l-about__text {
+        margin-left: 0;
+    }
+
+    /* pickup contents */
+    .l-pickup {
+        padding-top: 15svw;
+        padding-left: 25px;
+    }
+
+    .p-pickup__contents {
+        width: 85vw;
+        height: 60vw;
+    }
+
+    /* allitems */
+    .l-allitems {
+        padding-left: 25px;
+        padding-bottom: 5vw;
+    }
+
+    .l-allitems__title {
+        margin: 30px 0;
+    }
+
+    .l-allitems__contents {
+        position: relative;
+        display: flex;
+        margin-right: 20px;
+        color: #fff;
+        border-radius: 15px;
+
+    }
+
+    .c-allitems__img {
+        width: 85vw;
+        height: 60vw;
+    }
+
+    .c-allitems__img-text {
+        width: 23vw;
+        height: auto;
+        padding: 10px 8px;
+        font-size: 2.8vw;
+        border-radius: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+    /* about */
+    .l-about {
+        display: flex;
+        padding: 80px 100px 0 100px;
+    }
+
+    .l-about__img {
+        width: calc(100% / 2);
+    }
+
+    .l-about__img img{
+        width: 43vw;
+    }
+
+    .c-about__illust {
+        top:80px;
+        right: 100px;
+    }
+
+    .l-about__text {
+        margin-left: 60px;
+    }
+
+    /* pickup contents */
+    .l-pickup {
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+
+    .p-pickup__contents {
+        width: 65vw;
+        height: 50vw;
+    }
+
+    /* allitems */
+    .l-allitems {
+        display: flex;
+        padding: 80px 100px;
+    }
+
+    .l-allitems__title {
+        position: relative;
+        width: 30%;
+        line-height: 50px;
+    }
+
+    .l-allitems__list {
+        display: flex;
+        width: 70%;
+    }
+
+    .l-allitems__contents {
+        margin-right: 30px;
+        width: 100%;
+    }
+
+    .c-allitems1:hover {
+        background-image: url("../../images/allitem_herb02.jpg");
+        transition: 0.5s;
+    }
+
+    .c-allitems2:hover {
+        background-image: url("../../images/allitem_strawberry02.jpeg");
+        transition: 0.5s;
+    }
+
+    .c-allitems__img {
+        width: auto;
+        height: 20vw;
+    }
+
+    .c-allitems__img-text {
+        width: 100px;
+        height: auto;
+        padding: 8px 5px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
 }
