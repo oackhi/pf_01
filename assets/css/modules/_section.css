@@ -102,6 +102,10 @@
 }
 
 /* allitems */
+.l-allitems {
+    position: relative;
+}
+
 .l-allitems__title h2 {
     font-size: 30px
 }
@@ -128,8 +132,6 @@
 }
 
 .c-allitems__illust {
-    width: 18vw;
-    height: auto;
     position: absolute;
     bottom: 1vw;
     left: 2vw;
@@ -182,7 +184,6 @@
 
 /* magazine */
 .l-magazine {
-    padding: 80px 50px;
     background-color: #fff;
 }
 
@@ -204,25 +205,9 @@
     display: flex;
 }
 
-.p-magazine__contents li {
-    width : calc(100% / 3) ;
-    margin-right: 30px;
-    text-decoration: none;
-}
-
-.p-magazine__contents li:last-child {
-    margin: 0;
-}
-
 .p-magazine__contents a {
     color: #000;
     text-decoration: none;
-}
-
-.c-magazine__img {
-    width: auto;
-    height: 300px;
-    border-radius: 10px;
 }
 
 .c-magazine1 {
@@ -265,9 +250,7 @@
 .l-magazine__link {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
-
 
 .l-magazine__link button {
     position: relative;
@@ -287,7 +270,6 @@
 
 /* relationship */
 .l-relationship {
-    padding: 80px 50px;
     background-color: #fff;
 }
 
@@ -322,13 +304,12 @@
 .p-instagram__contents {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between; 
+    justify-content:space-between;
 }
 
 .p-instagram__contents a {
-    width: 20vw;
-    height: 20vw;
-    margin-right: 3vw;
+    width: calc(25% - 1vw);
+    height: 22vw;
     background-size: cover;
     position: relative;
 }
@@ -342,22 +323,20 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.3);
     opacity: 0;
-    transition: all 0.5s;
+    transition: 0.5s;
 }
 
 .p-instagram__contents a:hover::before {
     opacity: 1;
-    background-image: url(../../images/icon_instgram.png);
+    background-image: url("../../images/icon_whiteinstagram.png");
+    background-repeat: no-repeat;
+    background-position: center;
     /* no-repeat 出来ない */
     background-size: 3vw;
 }
 
-.p-instagram__contents a:nth-of-type(4n) {
-    margin-right: 0;
-}
-
 .p-instagram__contents a:nth-of-type(n+5) {
-    margin-top: 3vw;
+    margin-top: 1.5vw;
 }
 
 .c-instagram__contents01 {
@@ -406,7 +385,7 @@
     }
 
     .l-about__img img{
-        width: 550px;
+        width: 80vw;
     }
 
     .c-about__illust {
@@ -433,7 +412,15 @@
     /* allitems */
     .l-allitems {
         padding-left: 25px;
-        padding-bottom: 5vw;
+        padding-bottom: 145px;
+    }
+
+    .c-allitems__illust {
+        width: 165px;
+        height: auto;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .l-allitems__title {
@@ -446,7 +433,6 @@
         margin-right: 20px;
         color: #fff;
         border-radius: 15px;
-
     }
 
     .c-allitems__img {
@@ -462,6 +448,42 @@
         border-radius: 15px;
     }
     
+    /* magazine */
+    .l-magazine {
+        padding-top: 8vw;
+        padding-left: 25px;
+    }
+
+    .p-magazine__contents a {
+        width: 85vw;
+        height: 60vw;
+        margin-right: 20px;
+    }
+
+    .c-magazine__img {
+        width: 85vw;
+        height: 60vw;
+        border-radius: 15px;
+    }
+
+    .l-magazine__link {
+        margin-top: 50vw;
+    }
+
+    .l-magazine__link button {
+        position: relative;
+        width: 90%;
+        padding: 3vw 0;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 2.8vw;
+        font-weight: bold;
+    }
+
+    /* relationship */
+    .l-relationship {
+        padding: 40px 30px;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -509,8 +531,16 @@
 
     .l-allitems__title {
         position: relative;
-        width: 30%;
+        width: 35%;
         line-height: 50px;
+        margin-right: 25px;
+    }
+
+    .c-allitems__illust {
+        width: 18vw;
+        height: auto;
+        bottom: 1vw;
+        left: 2vw;
     }
 
     .l-allitems__list {
@@ -544,5 +574,34 @@
         padding: 8px 5px;
         font-size: 12px;
         border-radius: 10px;
+    }
+
+    /* magazine */
+    .l-magazine {
+        padding: 80px 50px;
+    }
+
+    .p-magazine__contents a {
+        width : calc(100% / 3);
+        margin-right: 30px;
+    }
+
+    .p-magazine__contents a:last-child {
+        margin: 0;
+    }
+
+    .c-magazine__img {
+        width: auto;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .l-magazine__link {
+        margin-top: 50px;
+    }
+
+    /* relationship */
+    .l-relationship {
+        padding: 40px 50px;
     }
 }

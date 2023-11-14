@@ -14,7 +14,7 @@
 
 <body>
     <div class="l-wrap">
-        <header>
+        <header id="header">
             <div class="l-header__top">
                 <div class="l-header__menu">
                     <nav>
@@ -101,8 +101,10 @@
             <div class="l-allitems__title">
                 <h2>ALL ITEMS</h2>
                 <p>すべての商品</p>
-                <button type="button" onclick="">VIEW ALL</button>
-                <img src="./assets/images/allitem_illust.png" class="c-allitems__illust" />
+                <div class="c-allitems__link">
+                    <button type="button" onclick="">VIEW ALL</button>
+                </div>
+                    <img src="./assets/images/allitem_illust.png" class="c-allitems__illust" />
             </div>
             <div class="l-allitems__list">
                 <a href="" class="l-allitems__contents">
@@ -130,48 +132,41 @@
                 <h2>MAGAZINE</h2>
                 <p>記事一覧</p>
             </div>
-            <ul class="p-magazine__contents">
-                <li>
-                    <a href="">
-                        <div class="c-magazine__img c-magazine1"></div>
-                        <p class="c-date">2023.11.01</p>
-                        <h2 class="c-magazine__title">
-                            積水ハウスオーナー様限定サービス「SUITE CONCIER」サービス開始のお知らせ
-                        </h2>
-                        <p class="c-magazine__text">
-                            積水ハウスオーナー様限定サービス「SUITE CONCIER」で、UETEの商品が購入できるようになりました。
-                        </p>
-                        <p class="c-magazine__link">Read more →</p>
-                    </a>
-                    
-                </li>
-                <li>
-                    <a href="">
-                        <div class="c-magazine__img c-magazine2"></div>
-                        <p class="c-date">2023.10.30</p>
-                        <h2 class="c-magazine__title">
-                            公式Instagramで「いちご スターターセット」に使えるクーポン配布中！
-                        </h2>
-                        <p class="c-magazine__text">
-                            UETE公式Instagramでは、「いちご スターターセット」に使えるクーポン配布中。お得なこの機会に、クーポンを使っていちご栽培を始めてみませんか。
-                        </p>
-                        <div class="c-magazine__link">Read more →</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="c-magazine__img c-magazine3"></div>
-                        <p class="c-date">2023.10.13</p>
-                        <h2 class="c-magazine__title">
-                            2023年度 秋冬の販売スケジュール
-                        </h2>
-                        <p class="c-magazine__text">
-                            冬は家庭菜園のオフシーズン。これからの季節の販売スケジュールについて大事なお知らせです。
-                        </p>
-                        <div class="c-magazine__link">Read more →</div>
-                    </a>
-                </li>
-            </ul>
+            <div class="p-magazine__contents">
+                <a href="">
+                    <div class="c-magazine__img c-magazine1"></div>
+                    <p class="c-date">2023.11.01</p>
+                    <h2 class="c-magazine__title">
+                        積水ハウスオーナー様限定サービス「SUITE CONCIER」サービス開始のお知らせ
+                    </h2>
+                    <p class="c-magazine__text">
+                        積水ハウスオーナー様限定サービス「SUITE CONCIER」で、UETEの商品が購入できるようになりました。
+                    </p>
+                    <p class="c-magazine__link">Read more →</p>
+                </a>
+                <a href="">
+                    <div class="c-magazine__img c-magazine2"></div>
+                    <p class="c-date">2023.10.30</p>
+                    <h2 class="c-magazine__title">
+                        公式Instagramで「いちご スターターセット」に使えるクーポン配布中！
+                    </h2>
+                    <p class="c-magazine__text">
+                        UETE公式Instagramでは、「いちご スターターセット」に使えるクーポン配布中。お得なこの機会に、クーポンを使っていちご栽培を始めてみませんか。
+                    </p>
+                    <div class="c-magazine__link">Read more →</div>
+                </a>
+                <a href="">
+                    <div class="c-magazine__img c-magazine3"></div>
+                    <p class="c-date">2023.10.13</p>
+                    <h2 class="c-magazine__title">
+                        2023年度 秋冬の販売スケジュール
+                    </h2>
+                    <p class="c-magazine__text">
+                        冬は家庭菜園のオフシーズン。これからの季節の販売スケジュールについて大事なお知らせです。
+                    </p>
+                    <div class="c-magazine__link">Read more →</div>
+                </a>
+            </div>
             <div class="l-magazine__link">
                 <button type="button" onclick="">VIEW ALL</button>
             </div>
@@ -195,6 +190,7 @@
         </section>
         <footer>
             <div class="l-footer__contents">
+                <a href="#header" class="return">↑</a>
                 <div class="l-footer__left">
                     <a href="" class="l-footer__logo">
                         <img src="./assets/images/site_icon.png" />
