@@ -1,0 +1,48 @@
+.l-wrap {
+    background-color: rgb(233, 220, 203);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.l-about a, .l-relationship a, #sendemail,
+header a, footer a, button {
+    cursor: pointer;
+}
+
+.p-pickup__slider {
+    cursor: grab;
+}
+  
+.p-pickup__slider:active {
+    cursor: grabbing;
+}
+
+@media screen and (max-width: 768px) {
+    .l-allitems__list a,
+    .p-magazine__contents a {
+        cursor: grab;
+    }
+
+    .l-allitems__list a:active,
+    .p-magazine__contents a:active {
+        cursor: grabbing;
+    }
+}
+@media screen and (min-width: 769px) {
+
+}

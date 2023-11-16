@@ -1,0 +1,105 @@
+/* header */
+.c-contact {
+    background: url(../../images/icon_contact.png) left 0 top -1px no-repeat;
+}
+
+.c-search {
+    background: url(../../images/icon_search.png) left 0 top -1px no-repeat;
+}
+
+.c-ogin {
+    background: url(../../images/icon_login.png) left 0 top -1px no-repeat;
+}
+
+.c-cart {
+    background: url(../../images/icon_cart.png) left 0 top -1px no-repeat;
+}
+
+/* pickup */
+.c-starterset {
+    background-image: url("../../images/pickup_01.jpg");
+    background-size: cover;
+}
+
+.c-howto {
+    background-image: url("../../images/pickup_02.jpg");
+    background-size: cover;
+}
+
+.c-newitems {
+    background-image: url("../../images/pickup_03.jpg");
+    background-size: cover;
+}
+
+/* allitems */
+.c-allitems1 {
+    background-image: url("../../images/allitem_herb01.jpg");
+}
+
+.c-allitems2 {
+    background-image: url("../../images/allitem_strawberry01.jpg");
+}
+
+/* magazine */
+.c-magazine1 {
+    background-size: cover;
+    background-image: url("../../images/magazine_01.jpg");
+}
+
+.c-magazine2 {
+    background-size: cover;
+    background-image: url("../../images/magazine_02.jpg");
+}
+
+.c-magazine3 {
+    background-size: cover;
+    background-image: url("../../images/magazine_03.jpg");
+}
+
+/* relationship */
+.c-instagram__contents01 {
+    background-image: url("../../images/instagram_01.jpg");
+}
+
+.c-instagram__contents02 {
+    background-image: url("../../images/instagram_02.jpg");
+}
+
+.c-instagram__contents03 {
+    background-image: url("../../images/instagram_03.jpg");
+}
+
+.c-instagram__contents04 {
+    background-image: url("../../images/instagram_04.jpg");
+}
+
+.c-instagram__contents05 {
+    background-image: url("../../images/instagram_05.jpg");
+}
+
+.c-instagram__contents06 {
+    background-image: url("../../images/instagram_06.jpg");
+}
+
+.c-instagram__contents07 {
+    background-image: url("../../images/instagram_07.jpg");
+}
+
+.c-instagram__contents08 {
+    background-image: url("../../images/instagram_08.jpg");
+}
+
+@media screen and (min-width: 769px) {
+    /* PC style */
+
+    /* allitems */
+    .c-allitems1:hover {
+        background-image: url("../../images/allitem_herb02.jpg");
+        transition: 0.5s;
+    }
+
+    .c-allitems2:hover {
+        background-image: url("../../images/allitem_strawberry02.jpeg");
+        transition: 0.5s;
+    }
+}

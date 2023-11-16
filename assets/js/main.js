@@ -1,3 +1,39 @@
+//header
+$(function () {
+    var navPos = $('#header').offset().top;
+    var navHeight = $('#header').outerHeight();
+    var scrollend = $('#header-area').offset().top - 54; //ページ上部からの距離を取得
+    $(document).scroll(function () {
+        distance = $(this).scrollTop(); //スクロールした距離を取得
+        if (scrollend <= distance) {
+            $('.js-change-area').fadeOut();
+        } else {
+            $('.js-change-area').fadeIn();
+        }
+    });
+});
+
+//scrollfadein
+$(function () {
+    $(window).scroll(function () {
+        $('.js-fade').each(function () {
+            var pos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > pos - windowHeight + 100) {
+                $(function () {
+                    $('.js-fade').each(function (i) {
+                        $(this).delay(i * 200).queue(function () {
+                            $(this).addClass('scroll');
+                        });
+                    });
+                });
+
+            }
+        });
+    });
+});
+
 // pickup
 $('.p-pickup__slider').slick({
     arrows: false,
@@ -11,14 +47,10 @@ function checkBreakPoint(mql) {
     if (mql.matches) {
         // スマホ向け（768px以下のとき）
         $('.l-allitems__list').not('.slick-initialized').slick({
-            //スライドさせる
-            lidesToShow: 2,
             arrows: false,
             variableWidth: true
         });
         $('.p-magazine__contents').not('.slick-initialized').slick({
-            //スライドさせる
-            lidesToShow: 2,
             arrows: false,
             variableWidth: true
         });

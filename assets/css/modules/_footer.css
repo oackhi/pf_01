@@ -16,7 +16,7 @@ footer {
 
 /* left */
 .l-footer__logo img {
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 .l-footer__instagram img {
@@ -44,17 +44,16 @@ footer {
 /* right */
 .l-footer__signup {
     font-size: 12px;
+    box-sizing: border-box;
 }
 
 #email {
-    height: 40px;
     margin-top: 20px;
     padding-left: 15px;
     margin-right: 10px;
 }
 
 #sendemail {
-    height: auto;
     padding: 11px 20px;
     color: #fff;
     background-color: #404040;
@@ -99,11 +98,13 @@ footer {
 
     #email {
         width: 70%;
+        height: 40px;
         margin-top: 15px;
     }
     
     #sendemail {
         width: 20%;
+        height: auto;
     }
 }
 
@@ -143,7 +144,7 @@ footer {
     /* center */
     .l-footer__center {
         width: 55%;
-        grid-template-columns: 30vh 30vh 20vh 30vh;
+        grid-template-columns: 21vh 21vh 14vh 21vh;
         grid-template-rows: 45px 45px 45px;
         column-gap: 20px;
         text-decoration: none;
@@ -164,6 +165,7 @@ footer {
     
     #sendemail {
         width: 90px;
+        height: auto;
     }
     
 }

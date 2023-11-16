@@ -1,0 +1,16 @@
+.l-about button:hover,
+.l-allitems button:hover,
+.l-magazine button:hover {
+    color: #fff;
+    background: #000;
+}
+
+.l-pickup button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+#sendemail:hover {
+    color: #000;
+    background-color: #fff;
+}

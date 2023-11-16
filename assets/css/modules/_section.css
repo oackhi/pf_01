@@ -21,7 +21,7 @@
 .l-about__text p { 
     margin: 20px 0;
     font-size: 12px;
-    line-height: 25px
+    line-height: 25px;
 }
 
 .l-about__text button {
@@ -55,21 +55,6 @@
     font-size: 25px;
     color: #fff;
     border-radius: 15px;
-}
-
-.c-starterset {
-    background-image: url("../../images/pickup_01.jpg");
-    background-size: cover;
-}
-
-.c-howto {
-    background-image: url("../../images/pickup_02.jpg");
-    background-size: cover;
-}
-
-.c-newitems {
-    background-image: url("../../images/pickup_03.jpg");
-    background-size: cover;
 }
 
 .p-text {
@@ -149,14 +134,6 @@
     background-size: cover;
 }
 
-.c-allitems1 {
-    background-image: url("../../images/allitem_herb01.jpg");
-}
-
-.c-allitems2 {
-    background-image: url("../../images/allitem_strawberry01.jpg");
-}
-
 .c-allitems__img-text {
     position: relative;
     top: 10%;
@@ -208,21 +185,11 @@
 .p-magazine__contents a {
     color: #000;
     text-decoration: none;
+    line-height: 0;
 }
 
-.c-magazine1 {
-    background-size: cover;
-    background-image: url("../../images/magazine_01.jpg");
-}
-
-.c-magazine2 {
-    background-size: cover;
-    background-image: url("../../images/magazine_02.jpg");
-}
-
-.c-magazine3 {
-    background-size: cover;
-    background-image: url("../../images/magazine_03.jpg");
+.p-magazine__contents a:hover {
+    opacity: 0.5;
 }
 
 .c-date {
@@ -239,11 +206,13 @@
 .c-magazine__text {
     margin-bottom: 20px;
     font-size: 14px;
+    line-height: 20px;
 }
 
-.c-magazine__link {
+.c-magazine__more {
     font-size: 14px;
     border-bottom:1px solid;
+    padding-bottom: 10px;
     display: inline-block;
 }
 
@@ -323,7 +292,6 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.3);
     opacity: 0;
-    transition: 0.5s;
 }
 
 .p-instagram__contents a:hover::before {
@@ -331,44 +299,11 @@
     background-image: url("../../images/icon_whiteinstagram.png");
     background-repeat: no-repeat;
     background-position: center;
-    /* no-repeat 出来ない */
     background-size: 3vw;
 }
 
 .p-instagram__contents a:nth-of-type(n+5) {
     margin-top: 1.5vw;
-}
-
-.c-instagram__contents01 {
-    background-image: url("../../images/instagram_01.jpg");
-}
-
-.c-instagram__contents02 {
-    background-image: url("../../images/instagram_02.jpg");
-}
-
-.c-instagram__contents03 {
-    background-image: url("../../images/instagram_03.jpg");
-}
-
-.c-instagram__contents04 {
-    background-image: url("../../images/instagram_04.jpg");
-}
-
-.c-instagram__contents05 {
-    background-image: url("../../images/instagram_05.jpg");
-}
-
-.c-instagram__contents06 {
-    background-image: url("../../images/instagram_06.jpg");
-}
-
-.c-instagram__contents07 {
-    background-image: url("../../images/instagram_07.jpg");
-}
-
-.c-instagram__contents08 {
-    background-image: url("../../images/instagram_08.jpg");
 }
 
 @media screen and (max-width: 768px) {
@@ -389,7 +324,7 @@
     }
 
     .c-about__illust {
-        bottom: -12%;
+        bottom: -13vw;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -415,8 +350,12 @@
         padding-bottom: 145px;
     }
 
+    .l-allitems__title p {
+        margin: 10px;
+    }
+
     .c-allitems__illust {
-        width: 165px;
+        width: 180px;
         height: auto;
         bottom: 30px;
         left: 50%;
@@ -500,12 +439,12 @@
     }
 
     .l-about__img img{
-        width: 43vw;
+        width: 40vw;
     }
 
     .c-about__illust {
-        top:80px;
-        right: 100px;
+        top: 1vw;
+        right: -7vw;
     }
 
     .l-about__text {
@@ -553,15 +492,6 @@
         width: 100%;
     }
 
-    .c-allitems1:hover {
-        background-image: url("../../images/allitem_herb02.jpg");
-        transition: 0.5s;
-    }
-
-    .c-allitems2:hover {
-        background-image: url("../../images/allitem_strawberry02.jpeg");
-        transition: 0.5s;
-    }
 
     .c-allitems__img {
         width: auto;
