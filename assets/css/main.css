@@ -1,12 +1,6 @@
 @import url('./modules/_header.css');
 @import url('./modules/_section.css');
+@import url('./modules/_button.css');
+@import url('./modules/_contents.css');
+@import url('./modules/_common.css');
 @import url('./modules/_footer.css');
-
-/*とりあえずここ*/
-.l-wrap {
-    background-color: rgb(233, 220, 203);
-}
-
-html {
-    scroll-behavior: smooth;
-}
