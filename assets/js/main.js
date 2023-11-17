@@ -7,11 +7,15 @@ $(function () {
         distance = $(this).scrollTop(); //スクロールした距離を取得
         if (scrollend <= distance) {
             $('.js-change-area').fadeOut();
+            $('.js-header').addClass('change-color');
+
         } else {
             $('.js-change-area').fadeIn();
+            $('.js-header').removeClass('change-color');
         }
     });
 });
+
 
 //scrollfadein
 $(function () {

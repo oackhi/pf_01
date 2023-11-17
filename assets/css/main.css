@@ -1,6 +1,6 @@
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_header.css');
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_section.css');
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_button.css');
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_contents.css');
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_common.css');
-@import url('https://oackhi.github.io/pf_01/assets/css/modules/_footer.css');
+@import url('./modules/_header.css');
+@import url('./modules/_section.css');
+@import url('./modules/_button.css');
+@import url('./modules/_contents.css');
+@import url('./modules/_common.css');
+@import url('./modules/_footer.css');
