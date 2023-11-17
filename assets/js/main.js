@@ -16,6 +16,39 @@ $(function () {
     });
 });
 
+$(function () {
+    let flag = true;
+    let flags = [0, 0];
+    let classes = ['ppp', 'qqq'];
+
+    function clickHandler(index, buttonClass) {
+        $(`.${buttonClass}`).click(function () {
+            classes.forEach((cls, clsIndex) => {
+                if (clsIndex === index) {
+                    $(`.${cls}`).addClass("ccc");
+                    flags[clsIndex]++;
+                } else {
+                    $(`.${cls}`).removeClass("ccc");
+                }
+            });
+
+            if (flag) {
+                $(".abc").toggle(".ccc");
+                flag = false;
+            } else if (flags[index] === 2) {
+                $(`.${classes[index]}`).removeClass("ccc");
+                $(".abc").toggle(".ccc");
+                flag = true;
+                flags = [0, 0];
+            }
+        });
+    }
+
+    ['bbb', 'ccc'].forEach((cls, index) => {
+        clickHandler(index, cls);
+    });
+});
+
 
 //scrollfadein
 $(function () {
@@ -51,11 +84,13 @@ function checkBreakPoint(mql) {
     if (mql.matches) {
         // スマホ向け（768px以下のとき）
         $('.l-allitems__list').not('.slick-initialized').slick({
-            arrows: false,
+            nextArrow: '<img src="./assets/images/arrow_right.png" class="slide-arrow next-arrow">',
+            prevArrow: '<div class="prev-arrow"></div>',
             variableWidth: true
         });
         $('.p-magazine__contents').not('.slick-initialized').slick({
-            arrows: false,
+            nextArrow: '<img src="./assets/images/arrow_right.png" class="slide-arrow next-arrow">',
+            prevArrow: '<div class="prev-arrow"></div>',
             variableWidth: true
         });
     } else {

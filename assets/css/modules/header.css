@@ -10,7 +10,6 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-between;
-    
     align-items: center;
     width: 100%;
     height: 80px;
@@ -19,13 +18,38 @@ header {
     box-sizing: border-box;
 }
 
+.l-wrap {
+    position: relative;
+}
+
+.abc {
+    background-color: rgb(233, 220, 203);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+
+.ppp, .qqq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    display: none;
+}
+
+.ccc {
+    display: block;
+}
+
 .l-header__top a {
     color: #fff;
     text-decoration: none;
 }
 
-.l-header__menu ul {
-    display: flex;
+.l-header__menu {
+    display: relative;
 }
 
 .l-header__link ul {
@@ -53,6 +77,14 @@ header {
     font-size:13px;
     padding-left: 18px;
     background-size: 15px;
+}
+.c-link__item span {
+    color: #fff;
+}
+
+.c-link__item span:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .c-link__item a:hover {

@@ -101,7 +101,6 @@
 
 .l-allitems__title button {
     position: relative;
-    width: 22vw;
     padding: 15px 8px;
     background-color: #fff;
     border-radius: 5px;
@@ -178,10 +177,6 @@
     font-size: 13px;
 }
 
-.p-magazine__contents {
-    display: flex;
-}
-
 .p-magazine__contents a {
     color: #000;
     text-decoration: none;
@@ -219,15 +214,13 @@
 .l-magazine__link {
     display: flex;
     justify-content: center;
+    margin-top: 70px;
 }
 
 .l-magazine__link button {
     position: relative;
-    width: 230px;
-    padding: 15px 8px;
     background-color: #fff;
     border-radius: 5px;
-    font-size: 12px;
     font-weight: bold;
 }
 
@@ -347,11 +340,16 @@
     /* allitems */
     .l-allitems {
         padding-left: 25px;
-        padding-bottom: 145px;
+        padding-bottom: 35vh;
     }
 
     .l-allitems__title p {
         margin: 10px;
+    }
+
+    .l-allitems__title button {
+        top: 77vh;
+        width: calc(100% - 20px);
     }
 
     .c-allitems__illust {
@@ -376,7 +374,7 @@
 
     .c-allitems__img {
         width: 85vw;
-        height: 60vw;
+        height: 50vh;
     }
 
     .c-allitems__img-text {
@@ -395,7 +393,7 @@
 
     .p-magazine__contents a {
         width: 85vw;
-        height: 60vw;
+        height: 600px;
         margin-right: 20px;
     }
 
@@ -405,18 +403,11 @@
         border-radius: 15px;
     }
 
-    .l-magazine__link {
-        margin-top: 50vw;
-    }
-
     .l-magazine__link button {
         position: relative;
         width: 90%;
         padding: 3vw 0;
-        background-color: #fff;
-        border-radius: 5px;
-        font-size: 2.8vw;
-        font-weight: bold;
+        font-size: 15px;
     }
 
     /* relationship */
@@ -475,6 +466,10 @@
         margin-right: 25px;
     }
 
+    .l-allitems__title button {
+        width: 22vw;
+    }
+
     .c-allitems__illust {
         width: 18vw;
         height: auto;
@@ -511,6 +506,10 @@
         padding: 80px 50px;
     }
 
+    .p-magazine__contents {
+        display: flex;
+    }
+
     .p-magazine__contents a {
         width : calc(100% / 3);
         margin-right: 30px;
@@ -526,8 +525,10 @@
         border-radius: 10px;
     }
 
-    .l-magazine__link {
-        margin-top: 50px;
+    .l-magazine__link button {
+        width: 230px;
+        padding: 15px 8px;
+        font-size: 12px;
     }
 
     /* relationship */
