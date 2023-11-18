@@ -2,7 +2,7 @@
 $(function () {
     var navPos = $('#header').offset().top;
     var navHeight = $('#header').outerHeight();
-    var scrollend = $('#header-area').offset().top - 54; //ページ上部からの距離を取得
+    var scrollend = $('#main-area').offset().top - 54; //ページ上部からの距離を取得
     $(document).scroll(function () {
         distance = $(this).scrollTop(); //スクロールした距離を取得
         if (scrollend <= distance) {
@@ -48,7 +48,6 @@ $(function () {
         clickHandler(index, cls);
     });
 });
-
 
 //scrollfadein
 $(function () {

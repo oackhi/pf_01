@@ -25,7 +25,6 @@
                 <div class="l-header__menu">
                     <nav>
                         <ul>
-                            <!-- <li><a href="">メニュー</a></li> -->
                             <li class="c-link__item"><span>コンセプト</span></li>
                             <li class="c-link__item bbb"><span>商品一覧</span></li>
                             <li class="c-link__item ccc"><span>記事一覧</span></li>
@@ -33,15 +32,15 @@
                         </ul>
                     </nav>
                     <div class="ppp">
-                        <a href="">すべての商品</a>
-                        <a href="">栽培キット</a>
-                        <a href="">ガーデニンググッズ</a>
-                        <a href="">ギフトカード</a>
+                        <p><a href="#">すべての商品</a></p>
+                        <p><a href="#">栽培キット</a></p>
+                        <p><a href="#">ガーデニンググッズ</a></p>
+                        <p><a href="#">ギフトカード</a></p>
                     </div>
                     <div class="qqq">
-                        <a href="">すべての記事</a>
-                        <a href="">お知らせ</a>
-                        <a href="">UETEのライフスタイル</a>
+                        <p><a href="#">すべての記事</a></p>
+                        <p><a href="#">お知らせ</a></P>
+                        <p><a href="#">UETEのライフスタイル</a></p>
                     </div>
                 </div>
                 <div class="l-header__logo"><a href="">
@@ -58,15 +57,20 @@
                     </nav>
                 </div>
             </div>
-            <div class="l-header__text" id="header-area">
-                <h1>心地の良い、遊べる菜園</h1>
-                <p>
-                    都心の小さなスペースを大自然に変え
-                    <br>いつでも自然と繋がれる
-                </p>
-            </div>
-            <a href="#about" class="about">↓</a>
+
         </header>
+
+        <main class="hero">
+        <div class="l-main__title" id="main-area">
+            <h1>心地の良い、遊べる菜園</h1>
+            <p>
+                都心の小さなスペースを大自然に変え
+                <br>いつでも自然と繋がれる
+            </p>
+        </div>
+        <a href="#about" class="about">↓</a>
+    </main>
+
         <section class="l-about" id="about">
             <div class="l-about__img js-fade"><img src="./assets/images/about.jpg" /></div>
             <div class="l-about__text js-fade">
@@ -86,7 +90,7 @@
                     <br>そして、その体験がやがて豊かな暮らし、未来をつくると願い、
                     <br>私たちはこのUETE（ウエテ）というブランドを立ち上げました。
                 </p>
-                <button type="button" onclick="">ABOUT UETE</button>
+                <button type="button" onclick="">ABOUT UERU</button>
                 <img src="./assets/images/about_illust.png" class="c-about__illust"/>
             </div>
         </section>
@@ -117,14 +121,13 @@
             </ul>
         </section>
         <section class="l-allitems">
+            <!-- <div class="l-allitems__wrap"> -->
             <div class="l-allitems__title">
                 <h2>ALL ITEMS</h2>
                 <p>すべての商品</p>
-                <button type="button" onclick="">VIEW ALL</button>
-                <img src="./assets/images/allitem_illust.png" class="c-allitems__illust" />
             </div>
             <div class="l-allitems__list js-fade">
-                <a href="" class="l-allitems__contents">
+                <a href="" class="l-allitems__contents c-contents1">
                     <div class="c-allitems__img c-allitems1">
                         <div class="c-allitems__img-text"></div>
                     </div>
@@ -133,7 +136,7 @@
                         <p class="c-allitems__value">¥4,400</p>
                     </div>
                 </a>
-                <a href="" class="l-allitems__contents">
+                <a href="" class="l-allitems__contents c-contens2">
                     <div class="c-allitems__img c-allitems2">
                         <div class="c-allitems__img-text"></div>
                     </div>
@@ -142,6 +145,10 @@
                         <p class="c-allitems__value">¥4,980</p>
                     </div>
                 </a>
+            </div>
+            <div class="l-allitems__link">
+                <button type="button" onclick="" class="c-allitems__link">VIEW ALL</button>
+                <img src="./assets/images/allitem_illust.png" class="c-allitems__illust" />
             </div>
         </section>
         <section class="l-magazine">

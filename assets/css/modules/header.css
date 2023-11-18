@@ -1,9 +1,5 @@
 header {
     position: relative;
-    height: 60vw;
-    text-align: center;
-    background-image: url("../../images/top.jpg");
-    background-size: cover;
 }
 
 .l-header__top {
@@ -16,10 +12,7 @@ header {
     padding: 20px 50px;
     z-index: 999;
     box-sizing: border-box;
-}
-
-.l-wrap {
-    position: relative;
+    text-align: center;
 }
 
 .abc {
@@ -32,11 +25,13 @@ header {
 }
 
 .ppp, .qqq {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #000;
     display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    font-size: 13px;
+    text-align: left;
+    line-height: 25px;
 }
 
 .ccc {
@@ -50,11 +45,6 @@ header {
 
 .l-header__menu {
     display: relative;
-}
-
-.l-header__link ul {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .l-header__menu ul,
@@ -106,32 +96,7 @@ header {
     width: 30px;
 }
 
-.l-header__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    color: #fff;
-    text-align: center;
-    z-index: 1;
-    font-size: 22px;
-}
 
-.l-header__text p {
-    font-size: 12px;
-    margin-top: 20px;
-    line-height: 25px;
-}
-
-.about {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 50px;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 768px) {
     /* SP style */

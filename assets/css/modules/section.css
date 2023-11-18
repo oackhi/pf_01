@@ -1,3 +1,40 @@
+/* hero */
+.hero {
+    position: relative;
+    height: 60vw;
+    text-align: center;
+    background-image: url("../../images/top.jpg");
+    background-size: cover;
+}
+
+.l-main__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    font-size: 22px;
+}
+
+.l-main__title p {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.about {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+
 /* about */
 .l-about {
     position: relative;
@@ -87,9 +124,7 @@
 }
 
 /* allitems */
-.l-allitems {
-    position: relative;
-}
+
 
 .l-allitems__title h2 {
     font-size: 30px
@@ -99,9 +134,15 @@
     font-size: 13px;
 }
 
-.l-allitems__title button {
+.l-allitems__link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-allitems__link {
     position: relative;
-    padding: 15px 8px;
+    padding: 10px 8px;
     background-color: #fff;
     border-radius: 5px;
     font-size: 12px;
@@ -109,16 +150,10 @@
     text-align: center;
 }
 
-.l-allitems__title button:after {
+.c-allitems__link:after {
     content:"→";
     position: absolute;
     right: 1vw;
-}
-
-.c-allitems__illust {
-    position: absolute;
-    bottom: 1vw;
-    left: 2vw;
 }
 
 .l-allitems__contents {
@@ -134,7 +169,7 @@
 }
 
 .c-allitems__img-text {
-    position: relative;
+    position: absolute;
     top: 10%;
     left: 10%;
     text-align: center;
@@ -455,6 +490,7 @@
 
     /* allitems */
     .l-allitems {
+        position: relative;
         display: flex;
         padding: 80px 100px;
     }
@@ -466,15 +502,24 @@
         margin-right: 25px;
     }
 
-    .l-allitems__title button {
-        width: 22vw;
+    .l-allitems__link {
+        top: 200px;
+        left: 52%;
+        transform: translateX(-50%);
     }
 
+    .l-allitems__link {
+        width: 90vw;
+        height: 55px;
+    }
+
+
     .c-allitems__illust {
-        width: 18vw;
+        position: absolute;
+        width: 150px;
         height: auto;
-        bottom: 1vw;
-        left: 2vw;
+        top: 55px;
+        left: 20px;
     }
 
     .l-allitems__list {
@@ -483,10 +528,12 @@
     }
 
     .l-allitems__contents {
-        margin-right: 30px;
         width: 100%;
     }
 
+    .c-contents1 {
+        margin-right: 30px;
+    }
 
     .c-allitems__img {
         width: auto;
