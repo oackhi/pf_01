@@ -33,11 +33,11 @@ $(function () {
             });
 
             if (flag) {
-                $(".abc").toggle(".ccc");
+                $(".abc").slideToggle(".ccc");
                 flag = false;
             } else if (flags[index] === 2) {
                 $(`.${classes[index]}`).removeClass("ccc");
-                $(".abc").toggle(".ccc");
+                $(".abc").slideToggle(".ccc");
                 flag = true;
                 flags = [0, 0];
             }

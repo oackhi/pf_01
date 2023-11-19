@@ -1,7 +1,7 @@
 /* hero */
 .hero {
     position: relative;
-    height: 60vw;
+    height: 100vh;
     text-align: center;
     background-image: url("../../images/top.jpg");
     background-size: cover;
@@ -47,7 +47,7 @@
 
 .c-about__illust {
     position: absolute;
-    width: 20vw;
+    width: 18vw;
 }
 
 .l-about__text {
@@ -63,11 +63,9 @@
 
 .l-about__text button {
     position: relative;
-    width: 230px;
-    padding: 15px 8px;
     background-color: #fff;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
@@ -82,7 +80,6 @@
 /* pickup contents */
 .l-pickup__title {
     font-size: 30px;
-    margin: 30px 0;
 }
 
 .p-pickup__contents {
@@ -125,6 +122,9 @@
 
 /* allitems */
 
+.l-allitems {
+    position: relative;
+}
 
 .l-allitems__title h2 {
     font-size: 30px
@@ -153,7 +153,11 @@
 .c-allitems__link:after {
     content:"→";
     position: absolute;
-    right: 1vw;
+    right: 5px;
+}
+
+.c-allitems__illust {
+    position: absolute;
 }
 
 .l-allitems__contents {
@@ -195,11 +199,12 @@
 
 /* magazine */
 .l-magazine {
+    position: relative;
     background-color: #fff;
 }
 
 .l-magazine__title {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
     line-height: 50px;
 }
@@ -254,15 +259,18 @@
 
 .l-magazine__link button {
     position: relative;
+    padding: 10px 8px;
     background-color: #fff;
     border-radius: 5px;
+    font-size: 12px;
     font-weight: bold;
+    text-align: center;
 }
 
 .l-magazine__link button:after {
     content:"→";
     position: absolute;
-    right: 10px;
+    right: 5px;
 }
 
 /* relationship */
@@ -271,7 +279,7 @@
 }
 
 .l-relationship__title {
-    margin-bottom: 20px;
+    padding: 40px 0 20px;
     text-align: center;
     line-height: 45px;
 }
@@ -351,6 +359,14 @@
         width: 80vw;
     }
 
+    .l-about__text button {
+        width: 90vw;
+        height: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 8px;
+    }
+
     .c-about__illust {
         bottom: -13vw;
         left: 50%;
@@ -363,40 +379,57 @@
 
     /* pickup contents */
     .l-pickup {
-        padding-top: 15svw;
-        padding-left: 25px;
+        padding-top: 15vh
+    }
+
+    .l-pickup__title {
+        padding: 20px 0 20px 25px;
+    }
+
+    .p-pickup__slider {
+        padding-left: 20px;
     }
 
     .p-pickup__contents {
         width: 85vw;
-        height: 60vw;
+        height: 55vh;
     }
 
     /* allitems */
     .l-allitems {
-        padding-left: 25px;
-        padding-bottom: 35vh;
+        margin-top: 25px;
+        margin-bottom: 35vh;
+    }
+
+    .l-allitems__title {
+        padding: 20px 0 20px 25px;
     }
 
     .l-allitems__title p {
         margin: 10px;
     }
 
-    .l-allitems__title button {
-        top: 77vh;
-        width: calc(100% - 20px);
+    .l-allitems__list {
+        padding-left: 25px;
+    }
+
+    .l-allitems__link {
+        top: 610px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .c-allitems__link {
+        width: 85vw;
+        height: 55px;
     }
 
     .c-allitems__illust {
         width: 180px;
         height: auto;
-        bottom: 30px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .l-allitems__title {
-        margin: 30px 0;
     }
 
     .l-allitems__contents {
@@ -422,32 +455,35 @@
     
     /* magazine */
     .l-magazine {
-        padding-top: 8vw;
-        padding-left: 25px;
+        padding: 8vh 0 18vh;
     }
 
     .p-magazine__contents a {
         width: 85vw;
-        height: 600px;
-        margin-right: 20px;
+        height: 80vh;
+        padding-left: 25px;
     }
 
     .c-magazine__img {
         width: 85vw;
-        height: 60vw;
+        height: 55vh;
         border-radius: 15px;
     }
 
+    .l-magazine__link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .l-magazine__link button {
-        position: relative;
-        width: 90%;
-        padding: 3vw 0;
-        font-size: 15px;
+        width: 90vw;
+        height: 50px;
     }
 
     /* relationship */
-    .l-relationship {
-        padding: 40px 30px;
+    .p-instagram__contents {
+        padding: 0 30px;
     }
 }
 
@@ -457,7 +493,7 @@
     /* about */
     .l-about {
         display: flex;
-        padding: 80px 100px 0 100px;
+        margin: 80px 80px 0;
     }
 
     .l-about__img {
@@ -468,29 +504,42 @@
         width: 40vw;
     }
 
+    .l-about__text button {
+        width: 230px;
+        padding: 15px 0;
+    }
+
     .c-about__illust {
         top: 1vw;
-        right: -7vw;
+        right: -5vw;
     }
 
     .l-about__text {
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     /* pickup contents */
     .l-pickup {
-        padding-top: 80px;
-        padding-left: 100px;
+        margin-top: 80px;
+    }
+
+    .l-pickup__title {
+        margin-left: 80px;
+        padding: 20px 0;
+    }
+
+    .p-pickup__slider {
+        margin-left: 80px;
     }
 
     .p-pickup__contents {
-        width: 65vw;
-        height: 50vw;
+        width: 80vw;
+        height: 65vh;
+        margin-right: 40px;
     }
 
     /* allitems */
     .l-allitems {
-        position: relative;
         display: flex;
         padding: 80px 100px;
     }
@@ -503,22 +552,19 @@
     }
 
     .l-allitems__link {
-        top: 200px;
-        left: 52%;
-        transform: translateX(-50%);
+        top: 180px;
+        left: 100px;
     }
 
-    .l-allitems__link {
-        width: 90vw;
-        height: 55px;
+    .c-allitems__link {
+        width: 200px;
+        height: 50px;
     }
-
 
     .c-allitems__illust {
-        position: absolute;
-        width: 150px;
+        width: 140px;
         height: auto;
-        top: 55px;
+        top: 65px;
         left: 20px;
     }
 
@@ -568,18 +614,17 @@
 
     .c-magazine__img {
         width: auto;
-        height: 300px;
+        height: 75vh;
         border-radius: 10px;
     }
 
     .l-magazine__link button {
-        width: 230px;
-        padding: 15px 8px;
-        font-size: 12px;
+        width: 200px;
+        height: 50px;
     }
 
     /* relationship */
-    .l-relationship {
-        padding: 40px 50px;
+    .p-instagram__contents {
+        margin: 0 50px;
     }
 }

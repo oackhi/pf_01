@@ -48,13 +48,12 @@ footer {
 }
 
 #email {
-    margin-top: 20px;
     padding-left: 15px;
     margin-right: 10px;
 }
 
 #sendemail {
-    padding: 11px 20px;
+    padding: 1px 20px;
     color: #fff;
     background-color: #404040;
 }
@@ -96,15 +95,20 @@ footer {
         width: 100%;
     }
 
-    #email {
-        width: 70%;
-        height: 40px;
+    .c-signup__form {
+        display: flex;
+        justify-content: space-between;
         margin-top: 15px;
+    }
+
+    #email {
+        width: 75%;
+        height: 40px;
     }
     
     #sendemail {
-        width: 20%;
-        height: auto;
+        width: 18%;
+        height: 45px;
     }
 }
 
@@ -144,8 +148,7 @@ footer {
     /* center */
     .l-footer__center {
         width: 55%;
-        grid-template-columns: 21vh 21vh 14vh 21vh;
-        grid-template-rows: 45px 45px 45px;
+        grid-template-columns: 10vw 10vw 9vw 10vw;        grid-template-rows: 45px 45px 45px;
         column-gap: 20px;
         text-decoration: none;
         margin-right: 2vw;
