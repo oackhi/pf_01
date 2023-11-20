@@ -49,6 +49,16 @@ $(function () {
     });
 });
 
+// sp_menu
+$(function () {
+    const nav = $('.sp_nav');
+    $('#sp_menu, .close').on('click', function () {
+        nav.toggleClass('toggle1');
+    });
+});
+
+
+
 //scrollfadein
 $(function () {
     $(window).scroll(function () {

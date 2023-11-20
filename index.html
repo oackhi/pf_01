@@ -23,7 +23,7 @@
         <header id="header">
             <div class="l-header__top js-header">
                 <div class="l-header__menu">
-                    <nav>
+                    <nav class="pc_nav">
                         <ul>
                             <li class="c-link__item"><span><a href="#">コンセプト</a></span></li>
                             <li class="c-link__item bbb"><span>商品一覧</span></li>
@@ -31,6 +31,23 @@
                             <li class="c-link__item"><span><a href="#">育て方</a></span></li>
                         </ul>
                     </nav>
+                    <div id="sp_menu">MENU</div>
+                    <div class="sp_nav">
+                        <span class="close"></span>
+                        <ul>
+                            <li><a href="#">TOP</a></li>
+                            <li><a href="#">コンセプト</a></li>
+                            <li><a href="#">商品一覧</a></li>
+                            <li><a href="#">記事一覧</a></li>
+                            <li><a href="#">ご利用ガイド</a></li>
+                            <li><a href="#">よくあるご質問</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                            <li><a href="#">取引規定</a></li>
+                            <li><a href="#">特定商取引に基づく表記</a></li>
+                            <li><a href="#">利用規定</a></li>
+                        </ul>
+                    </div>
                     <div class="ppp">
                         <p><a href="#">すべての商品</a></p>
                         <p><a href="#">栽培キット</a></p>
@@ -42,10 +59,14 @@
                         <p><a href="#">お知らせ</a></P>
                         <p><a href="#">UETEのライフスタイル</a></p>
                     </div>
+
                 </div>
-                <div class="l-header__logo"><a href="">
-                    <img src="./assets/images/siteicon_white.png" /><p class="js-change-area"></p>
-                </a></div>
+                <div class="l-header__logo">
+                    <a href="">
+                        <img src="./assets/images/siteicon_white.png" />
+                        <p class="js-change-area"></p>
+                    </a>
+                </div>
                 <div class="l-header__link">
                     <nav>
                         <ul>
@@ -59,18 +80,16 @@
             </div>
 
         </header>
-
         <main class="hero">
-        <div class="l-main__title" id="main-area">
-            <h1>心地の良い、遊べる菜園</h1>
-            <p>
-                都心の小さなスペースを大自然に変え
-                <br>いつでも自然と繋がれる
-            </p>
-        </div>
-        <a href="#about" class="about">↓</a>
-    </main>
-
+            <div class="l-main__title" id="main-area">
+                <h1>心地の良い、遊べる菜園</h1>
+                <p>
+                    都心の小さなスペースを大自然に変え
+                    <br>いつでも自然と繋がれる
+                </p>
+            </div>
+            <a href="#about" class="about">↓</a>
+        </main>
         <section class="l-about" id="about">
             <div class="l-about__img js-fade"><img src="./assets/images/about.jpg" /></div>
             <div class="l-about__text js-fade">
@@ -121,31 +140,34 @@
             </ul>
         </section>
         <section class="l-allitems">
-            <!-- <div class="l-allitems__wrap"> -->
             <div class="l-allitems__title">
                 <h2>ALL ITEMS</h2>
                 <p>すべての商品</p>
             </div>
-            <div class="l-allitems__list js-fade">
-                <a href="" class="l-allitems__contents c-contents1">
-                    <div class="c-allitems__img c-allitems1">
-                        <div class="c-allitems__img-text"></div>
-                    </div>
-                    <div class="c-allitems__text">
-                        <p class="c-allitems__name">イタリアンパセリ スターターセット</p>
-                        <p class="c-allitems__value">¥4,400</p>
-                    </div>
-                </a>
-                <a href="" class="l-allitems__contents c-contens2">
-                    <div class="c-allitems__img c-allitems2">
-                        <div class="c-allitems__img-text"></div>
-                    </div>
-                    <div class="c-allitems__text">
-                        <p class="c-allitems__name">秘密の隠し味になるハーブミックス スターターセット</p>
-                        <p class="c-allitems__value">¥4,980</p>
-                    </div>
-                </a>
-            </div>
+            <ul class="l-allitems__list js-fade">
+                <li class="l-allitems__contents c-contents1">
+                    <a href="#">
+                        <div class="c-allitems__img c-allitems1">
+                            <div class="c-allitems__img-text"></div>
+                        </div>
+                        <div class="c-allitems__text">
+                            <p class="c-allitems__name">イタリアンパセリ スターターセット</p>
+                            <p class="c-allitems__value">¥4,400</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="l-allitems__contents c-contens2">
+                    <a href="#">
+                        <div class="c-allitems__img c-allitems2">
+                            <div class="c-allitems__img-text"></div>
+                        </div>
+                        <div class="c-allitems__text">
+                            <p class="c-allitems__name">秘密の隠し味になるハーブミックス スターターセット</p>
+                            <p class="c-allitems__value">¥4,980</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
             <div class="l-allitems__link">
                 <button type="button" onclick="" class="c-allitems__link">VIEW ALL</button>
                 <img src="./assets/images/allitem_illust.png" class="c-allitems__illust" />
@@ -157,41 +179,47 @@
                     <h2>MAGAZINE</h2>
                     <p>記事一覧</p>
                 </div>
-                <div class="p-magazine__contents">
-                    <a href="">
-                        <div class="c-magazine__img c-magazine1"></div>
-                        <p class="c-date">2023.11.01</p>
-                        <h3 class="c-magazine__title">
-                            積水ハウスオーナー様限定サービス「SUITE CONCIER」サービス開始のお知らせ
-                        </h3>
-                        <p class="c-magazine__text">
-                            積水ハウスオーナー様限定サービス「SUITE CONCIER」で、UETEの商品が購入できるようになりました。
-                        </p>
-                        <div class="c-magazine__more">Read more →</div>
-                    </a>
-                    <a href="">
-                        <div class="c-magazine__img c-magazine2"></div>
-                        <p class="c-date">2023.10.30</p>
-                        <h3 class="c-magazine__title">
-                            公式Instagramで「いちご スターターセット」に使えるクーポン配布中！
-                        </h3>
-                        <p class="c-magazine__text">
-                            UETE公式Instagramでは、「いちご スターターセット」に使えるクーポン配布中。お得なこの機会に、クーポンを使っていちご栽培を始めてみませんか。
-                        </p>
-                        <div class="c-magazine__more">Read more →</div>
-                    </a>
-                    <a href="">
-                        <div class="c-magazine__img c-magazine3"></div>
-                        <p class="c-date">2023.10.13</p>
-                        <h3 class="c-magazine__title">
-                            2023年度 秋冬の販売スケジュール
-                        </h3>
-                        <p class="c-magazine__text">
-                            冬は家庭菜園のオフシーズン。これからの季節の販売スケジュールについて大事なお知らせです。
-                        </p>
-                        <div class="c-magazine__more">Read more →</div>
-                    </a>
-                </div>
+                <ul class="p-magazine__contents">
+                    <li>
+                        <a href="#">
+                            <div class="c-magazine__img c-magazine1"></div>
+                            <p class="c-date">2023.11.01</p>
+                            <h3 class="c-magazine__title">
+                                積水ハウスオーナー様限定サービス「SUITE CONCIER」サービス開始のお知らせ
+                            </h3>
+                            <p class="c-magazine__text">
+                                積水ハウスオーナー様限定サービス「SUITE CONCIER」で、UETEの商品が購入できるようになりました。
+                            </p>
+                            <div class="c-magazine__more">Read more →</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="c-magazine__img c-magazine2"></div>
+                            <p class="c-date">2023.10.30</p>
+                            <h3 class="c-magazine__title">
+                                公式Instagramで「いちご スターターセット」に使えるクーポン配布中！
+                            </h3>
+                            <p class="c-magazine__text">
+                                UETE公式Instagramでは、「いちご スターターセット」に使えるクーポン配布中。お得なこの機会に、クーポンを使っていちご栽培を始めてみませんか。
+                            </p>
+                            <div class="c-magazine__more">Read more →</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="c-magazine__img c-magazine3"></div>
+                            <p class="c-date">2023.10.13</p>
+                            <h3 class="c-magazine__title">
+                                2023年度 秋冬の販売スケジュール
+                            </h3>
+                            <p class="c-magazine__text">
+                                冬は家庭菜園のオフシーズン。これからの季節の販売スケジュールについて大事なお知らせです。
+                            </p>
+                            <div class="c-magazine__more">Read more →</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="l-magazine__link">
                 <button type="button" onclick="">VIEW ALL</button>
@@ -204,39 +232,39 @@
                 <p class="c-relationship__text">隣の芝生が青いのも、なんかうれしい。</p>
             </div>
             <div class="p-instagram__contents">
-                <a href="" class="c-instagram__contents01"></a>
-                <a href="" class="c-instagram__contents02"></a>
-                <a href="" class="c-instagram__contents03"></a>
-                <a href="" class="c-instagram__contents04"></a>
-                <a href="" class="c-instagram__contents05"></a>
-                <a href="" class="c-instagram__contents06"></a>
-                <a href="" class="c-instagram__contents07"></a>
-                <a href="" class="c-instagram__contents08"></a>
+                <a href="#" class="c-instagram__contents01"></a>
+                <a href="#" class="c-instagram__contents02"></a>
+                <a href="#" class="c-instagram__contents03"></a>
+                <a href="#" class="c-instagram__contents04"></a>
+                <a href="#" class="c-instagram__contents05"></a>
+                <a href="#" class="c-instagram__contents06"></a>
+                <a href="#" class="c-instagram__contents07"></a>
+                <a href="#" class="c-instagram__contents08"></a>
             </div>
         </section>
         <footer>
             <div class="l-footer__contents">
                 <a href="#header" class="return">↑</a>
                 <div class="l-footer__left">
-                    <a href="" class="l-footer__logo">
+                    <a href="#" class="l-footer__logo">
                         <img src="./assets/images/siteicon_black.png" />
                     </a>
-                    <a href="" class="l-footer__instagram">
+                    <a href="#" class="l-footer__instagram">
                         <img src="./assets/images/icon_instgram.png" />
                     </a>
                 </div>
                 <div class="l-footer__center">
-                    <a href="">家庭菜園UETE トップ</a>
-                    <a href="">コンセプト</a>
-                    <a href="">記事一覧</a>
-                    <a href="">商品一覧</a>
-                    <a href="">ご利用ガイド</a>
-                    <a href="">よくある質問</a>
-                    <a href="">お問い合わせ</a>
-                    <a href="">プライバシーポリシー</a>
-                    <a href="">取引規定</a>
-                    <a href="">特定商標に基づく表記</a>
-                    <a href="">利用規約</a>
+                    <a href="#">家庭菜園UETE トップ</a>
+                    <a href="#">コンセプト</a>
+                    <a href="#">記事一覧</a>
+                    <a href="#">商品一覧</a>
+                    <a href="#">ご利用ガイド</a>
+                    <a href="#">よくある質問</a>
+                    <a href="#">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">取引規定</a>
+                    <a href="#">特定商標に基づく表記</a>
+                    <a href="#">利用規約</a>
                 </div>
                 <div class="l-footer__signup">
                     <p>メールマガジンに登録して、最新情報をチェック</p>
