@@ -24,8 +24,8 @@ header {
 
 .abc {
     background-color: rgb(233, 220, 203);
-    color: #000;
     position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 999;
@@ -48,7 +48,6 @@ header {
 
 .bbb, .ccc {
     display: block;
-    color: #000;
 }
 
 .l-header__menu,
@@ -76,8 +75,8 @@ header {
     background-size: 15px;
 }
 
-.c-link__item a:hover {
-    text-decoration: underline;
+.c-link__item:hover {
+    border-bottom: 1px solid #fff;
     cursor: pointer;
 }
 
@@ -92,8 +91,26 @@ header {
     transition: 0.3s;
 }
 
+.change-color.active {
+    background-color: transparent;
+}
+
 .l-header__logo img {
     width: 30px;
+}
+
+.c-logo__white.active {
+    display: none;
+}
+
+.c-logo__black {
+    display: none;
+}
+
+.c-logo__black.active {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -112,6 +129,7 @@ header {
         display: block;
         text-align: start;
         color: #fff;
+        cursor: pointer;
      }
 
     #sp_menu::before {
@@ -124,12 +142,20 @@ header {
         transform: translateY(-50%);
      }
 
+     #sp_menu:hover {
+        text-decoration: underline;
+     }
+
      .sp_nav {
         padding-top: 50px;
      }
 
      .sp_nav li {
         font-size: 15px;
+     }
+
+     .sp_nav li:hover {
+        border-bottom: 1px solid #000;
      }
 
      .sp_nav ul {
@@ -143,6 +169,7 @@ header {
      .sp_nav li {
         margin: 0;
         padding: 0;
+        color: #000;
      }
 
      .sp_nav li a, .sp_nav li span {
@@ -178,6 +205,7 @@ header {
         height: 30px;
         top: -10px;
         left: 85vw;
+        cursor: pointer;
       }
       
       .close::before, .close::after {
@@ -206,6 +234,20 @@ header {
 
 @media screen and (min-width: 769px) {
     /* PC style */
+    .l-header__top.active a,
+    .l-header__top.active span {
+        color: #000;
+    }
+
+    .l-header__top.active a:hover,
+    .l-header__top.active span:hover {
+        text-decoration: underline;
+    }
+
+    .l-header__logo.active a:hover {
+        text-decoration: none;
+    }
+
     #sp_menu, .sp_nav, .close {
         display: none;
      }

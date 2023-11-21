@@ -16,12 +16,14 @@
     text-align: center;
     z-index: 1;
     font-size: 22px;
+    width: 100%;
 }
 
 .l-main__title p {
     font-size: 12px;
     margin-top: 20px;
     line-height: 25px;
+    width: 100%;
 }
 
 .about {

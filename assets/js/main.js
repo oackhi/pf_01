@@ -3,23 +3,38 @@ $(function () {
     var navPos = $('#header').offset().top;
     var navHeight = $('#header').outerHeight();
     var scrollend = $('#main-area').offset().top - 54; //ページ上部からの距離を取得
+    var changeArea = $('.js-change-area');
+    var header = $('.js-header');
     $(document).scroll(function () {
-        distance = $(this).scrollTop(); //スクロールした距離を取得
+        var distance = $(this).scrollTop(); //スクロールした距離を取得
         if (scrollend <= distance) {
-            $('.js-change-area').fadeOut();
-            $('.js-header').addClass('change-color');
-
+            changeArea.fadeOut();
+            header.addClass('change-color');
         } else {
-            $('.js-change-area').fadeIn();
-            $('.js-header').removeClass('change-color');
+            changeArea.fadeIn();
+            header.removeClass('change-color');
         }
     });
+    $('.change-color').toggleClass('active');
 });
+
 
 $(function () {
     let flag = true;
     let flags = [0, 0];
     let classes = ['ppp', 'qqq'];
+
+    function toggleClasses() {
+        $('.l-header__top').toggleClass('active');
+        $('.l-header__logo').toggleClass('active');
+        $('.c-logo__white').toggleClass('active');
+        $('.c-logo__black').toggleClass('active');
+        $('.l-header__link').toggleClass('active');
+        $('.c-contact').toggleClass('active');
+        $('.c-search').toggleClass('active');
+        $('.c-login').toggleClass('active');
+        $('.c-cart').toggleClass('active');
+    }
 
     function clickHandler(index, buttonClass) {
         $(`.${buttonClass}`).click(function () {
@@ -35,9 +50,11 @@ $(function () {
             if (flag) {
                 $(".abc").slideToggle(".ccc");
                 flag = false;
+                toggleClasses();
             } else if (flags[index] === 2) {
                 $(`.${classes[index]}`).removeClass("ccc");
                 $(".abc").slideToggle(".ccc");
+                toggleClasses();
                 flag = true;
                 flags = [0, 0];
             }
@@ -48,6 +65,7 @@ $(function () {
         clickHandler(index, cls);
     });
 });
+
 
 // sp_menu
 $(function () {

@@ -1,19 +1,36 @@
 /* header */
 .c-contact {
-    background: url(../../images/icon_contact.png) left 0 top -1px no-repeat;
+    background: url(../../images/icon_contactWhite.png) left 0 top -1px no-repeat;
+}
+.c-contact.active {
+    background: url(../../images/icon_contactBlack.png) left 0 top -2px no-repeat;
+    background-size: 17px;
 }
 
 .c-search {
-    background: url(../../images/icon_search.png) left 0 top -1px no-repeat;
+    background: url(../../images/icon_searchWhite.png) left 0 top -1px no-repeat;
+}
+.c-search.active {
+    background: url(../../images/icon_searchBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
 }
 
 .c-login {
-    background: url(../../images/icon_login.png) left 0 top -1px no-repeat;
+    background: url(../../images/icon_loginWhite.png) left 0 top -1px no-repeat;
+}
+.c-login.active {
+    background: url(../../images/icon_loginBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
 }
 
 .c-cart {
-    background: url(../../images/icon_cart.png) left 0 top -1px no-repeat;
+    background: url(../../images/icon_cartWhite.png) left 0 top -1px no-repeat;
 }
+.c-cart.active {
+    background: url(../../images/icon_loginBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
+}
+
 
 /* pickup */
 .c-starterset {
