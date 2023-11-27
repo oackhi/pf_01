@@ -27,6 +27,8 @@ $(function () {
     function toggleClasses() {
         $('.l-header__top').toggleClass('active');
         $('.l-header__logo').toggleClass('active');
+        $('.inn-bbb').toggleClass('active');
+        $('.inn-ccc').toggleClass('active');
         $('.c-logo__white').toggleClass('active');
         $('.c-logo__black').toggleClass('active');
         $('.l-header__link').toggleClass('active');
@@ -66,12 +68,11 @@ $(function () {
     });
 });
 
-
 // sp_menu
 $(function () {
     const nav = $('.sp_nav');
     $('#sp_menu, .close').on('click', function () {
-        nav.toggleClass('toggle1');
+        nav.toggleClass('toggle');
     });
 });
 

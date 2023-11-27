@@ -274,6 +274,12 @@
     right: 5px;
 }
 
+.c-magazine__illust {
+    position: absolute;
+    width: 180px;
+    height: auto;
+}
+
 /* relationship */
 .l-relationship {
     background-color: #fff;
@@ -393,7 +399,7 @@
 
     .p-pickup__contents {
         width: 85vw;
-        height: 55vh;
+        height: 60vw;
     }
 
     /* allitems */
@@ -482,6 +488,12 @@
     .l-magazine__link button {
         width: 90vw;
         height: 50px;
+    }
+
+.c-magazine__illust {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     /* relationship */
@@ -624,6 +636,11 @@
     .l-magazine__link button {
         width: 200px;
         height: 50px;
+    }
+
+    .c-magazine__illust {
+        left: 10%;
+        bottom: 5%;
     }
 
     /* relationship */
