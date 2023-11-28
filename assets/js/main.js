@@ -35,8 +35,6 @@ $(function () {
         $('.c-search').toggleClass('active');
         $('.c-login').toggleClass('active');
         $('.c-cart').toggleClass('active');
-        $('.button-bbb').toggleClass('active');
-        $('.button-ccc').toggleClass('active');
     }
 
     function clickHandler(index, buttonClass) {
@@ -66,6 +64,61 @@ $(function () {
 
     ['bbb', 'ccc'].forEach((cls, index) => {
         clickHandler(index, cls);
+    });
+});
+
+
+
+$(function () {
+    let flag;
+    let flag1;
+    let flag2;
+
+    flag = true;
+    flag1 = 0;
+    flag2 = 0;
+
+    const b = $('.button-bbb');
+    const c = $('.button-ccc');
+
+    b.addClass("down");
+    $(".bbb").click(function () {
+        b.next().slideToggle(500);
+        flag1++;
+
+        if (flag) {
+            b.removeClass("down");
+            b.addClass("up");
+            c.addClass("active");
+            flag = false;
+        } else if (flag1 === 2) {
+            b.removeClass("up");
+            c.removeClass("active");
+            b.addClass("down");
+            flag = true;
+            flag1 = 0;
+            flag2 = 0;
+        }
+    });
+
+    c.addClass("down");
+    $(".ccc").click(function () {
+        b.next().slideToggle(500);
+        flag2++;
+
+        if (flag) {
+            c.removeClass("down");
+            c.addClass("up");
+            b.addClass("active");
+            flag = false;
+        } else if (flag2 === 2) {
+            c.removeClass("up");
+            b.removeClass("active");
+            c.addClass("down");
+            flag = true;
+            flag1 = 0;
+            flag2 = 0;
+        }
     });
 });
 
