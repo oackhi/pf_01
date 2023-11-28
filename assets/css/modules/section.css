@@ -603,10 +603,9 @@
     }
 
     .c-allitems__illust {
-        width: 140px;
+        width: 180px;
         height: auto;
-        top: 65px;
-        left: 20px;
+        top: 75px;
     }
 
     /* magazine */
@@ -639,7 +638,7 @@
     }
 
     .c-magazine__illust {
-        left: 10%;
+        right: 65vw;
         bottom: 5%;
     }
 

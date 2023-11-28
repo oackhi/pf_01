@@ -27,8 +27,7 @@ $(function () {
     function toggleClasses() {
         $('.l-header__top').toggleClass('active');
         $('.l-header__logo').toggleClass('active');
-        $('.inn-bbb').toggleClass('active');
-        $('.inn-ccc').toggleClass('active');
+        $('.l-header__menu').toggleClass('active');
         $('.c-logo__white').toggleClass('active');
         $('.c-logo__black').toggleClass('active');
         $('.l-header__link').toggleClass('active');
@@ -36,16 +35,18 @@ $(function () {
         $('.c-search').toggleClass('active');
         $('.c-login').toggleClass('active');
         $('.c-cart').toggleClass('active');
+        $('.button-bbb').toggleClass('active');
+        $('.button-ccc').toggleClass('active');
     }
 
     function clickHandler(index, buttonClass) {
         $(`.${buttonClass}`).click(function () {
             classes.forEach((cls, clsIndex) => {
                 if (clsIndex === index) {
-                    $(`.${cls}`).addClass("ccc");
+                    $(`.${cls}`).addClass("iii");
                     flags[clsIndex]++;
                 } else {
-                    $(`.${cls}`).removeClass("ccc");
+                    $(`.${cls}`).removeClass("iii");
                 }
             });
 
@@ -54,7 +55,7 @@ $(function () {
                 flag = false;
                 toggleClasses();
             } else if (flags[index] === 2) {
-                $(`.${classes[index]}`).removeClass("ccc");
+                $(`.${classes[index]}`).removeClass("iii");
                 $(".abc").slideToggle(".ccc");
                 toggleClasses();
                 flag = true;
@@ -68,6 +69,7 @@ $(function () {
     });
 });
 
+
 // sp_menu
 $(function () {
     const nav = $('.sp_nav');
@@ -75,7 +77,6 @@ $(function () {
         nav.toggleClass('toggle');
     });
 });
-
 
 
 //scrollfadein
