@@ -83,40 +83,70 @@ $(function () {
 
     b.addClass("down");
     $(".bbb").click(function () {
-        b.next().slideToggle(500);
-        flag1++;
+        // b.next().slideToggle(500);
+        flag2++;
 
-        if (flag) {
-            b.removeClass("down");
-            b.addClass("up");
-            c.addClass("active");
-            flag = false;
-        } else if (flag1 === 2) {
-            b.removeClass("up");
-            c.removeClass("active");
-            b.addClass("down");
-            flag = true;
+        if (flag1 === 0) {
+
+            // if (flag) {
+            //     b.removeClass("down");
+            //     b.addClass("up");
+            //     c.addClass("active");
+            //     flag = false;
+            // } else if (flag1 === 2) {
+            //     b.removeClass("up");
+            //     c.removeClass("active");
+            //     b.addClass("down");
+            //     flag = true;
+            //     flag1 = 0;
+            //     flag2 = 0;
+            // }
+            const z = $(b).hasClass('down');
+            c.removeClass("up");
+            c.addClass("down");
+            if (z) {
+                b.removeClass("down");
+                b.addClass("up");
+            } else {
+                b.removeClass("up");
+                b.addClass("down");
+            }
+
+        } else {
             flag1 = 0;
-            flag2 = 0;
         }
     });
 
     c.addClass("down");
     $(".ccc").click(function () {
-        b.next().slideToggle(500);
-        flag2++;
+        // b.next().slideToggle(500);
+        flag1++;
+        if (flag2 === 0) {
 
-        if (flag) {
-            c.removeClass("down");
-            c.addClass("up");
-            b.addClass("active");
-            flag = false;
-        } else if (flag2 === 2) {
-            c.removeClass("up");
-            b.removeClass("active");
-            c.addClass("down");
-            flag = true;
-            flag1 = 0;
+            // if (flag) {
+            //     c.removeClass("down");
+            //     c.addClass("up");
+            //     b.addClass("active");
+            //     flag = false;
+            // } else if (flag2 === 2) {
+            //     c.removeClass("up");
+            //     b.removeClass("active");
+            //     c.addClass("down");
+            //     flag = true;
+            //     flag1 = 0;
+            //     flag2 = 0;
+            // }
+            const x = $(c).hasClass('down');
+            b.removeClass("up");
+            b.addClass("down");
+            if (x) {
+                c.removeClass("down");
+                c.addClass("up");
+            } else {
+                c.removeClass("up");
+                c.addClass("down");
+            }
+        } else {
             flag2 = 0;
         }
     });
