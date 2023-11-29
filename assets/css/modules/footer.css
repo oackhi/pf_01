@@ -5,7 +5,7 @@ footer {
 
 .return {
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     color: #fff;
     background-color: #000;
@@ -20,7 +20,7 @@ footer {
     height: auto;
 }
 .l-footer__instagram img {
-    width: 30px;
+    width: 25px;
     height: auto;
 }
 
@@ -67,7 +67,7 @@ footer {
 @media screen and (max-width: 768px) {
     /* SP style */
     footer {
-        padding: 12vw 30px;
+        padding: 130px 30px 30px;
     }
 
     .return {
@@ -115,7 +115,7 @@ footer {
 @media screen and (min-width: 769px) {
     /* PC style */
     footer {
-        padding: 80px 100px;
+        padding: 130px 100px 30px 100px;
     }
 
     .return {
@@ -148,7 +148,8 @@ footer {
     /* center */
     .l-footer__center {
         width: 55%;
-        grid-template-columns: 10vw 10vw 9vw 10vw;        grid-template-rows: 45px 45px 45px;
+        grid-template-columns: 10vw 10vw 9vw 10vw;        
+        grid-template-rows: 45px 45px 45px;
         column-gap: 20px;
         text-decoration: none;
         margin-right: 2vw;
