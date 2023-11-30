@@ -63,22 +63,6 @@
     line-height: 25px;
 }
 
-.l-about__text button {
-    position: relative;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.l-about__text button::after {
-    position: absolute;
-    right: 5px;
-    content: "→";
-    font-size: 15px;
-}
-
 /* pickup contents */
 .l-pickup__title {
     font-size: 30px;
@@ -97,29 +81,12 @@
     position: absolute;
     bottom: 7%;
     left: 7%;
-    line-height: 50px;
+
 }
 
 .p-text p {
     font-size: 15px;
-}
-
-.p-pickup__slider button {
-    position: relative;
-    width: 160px;
-    padding: 10px 3px;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    background: none;
-}
-
-.p-pickup__slider button::after {
-    position: absolute;
-    right: 5px;
-    content:"→";
+    line-height: 50px;
 }
 
 /* allitems */
@@ -172,26 +139,11 @@
 .c-allitems__value {
     margin-top: 10px;
 }
+
 .l-allitems__link {
     position: absolute;
     display: flex;
     flex-direction: column;
-}
-
-.c-allitems__link {
-    position: relative;
-    padding: 10px 8px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.c-allitems__link:after {
-    content:"→";
-    position: absolute;
-    right: 5px;
 }
 
 .c-allitems__illust {
@@ -256,22 +208,6 @@
     display: flex;
     justify-content: center;
     margin-top: 70px;
-}
-
-.l-magazine__link button {
-    position: relative;
-    padding: 10px 8px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.l-magazine__link button:after {
-    content:"→";
-    position: absolute;
-    right: 5px;
 }
 
 .c-magazine__illust {
@@ -349,7 +285,7 @@
     margin-top: 1.5vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 899px) {
     /* SP style */
 
     /* about */
@@ -364,14 +300,6 @@
 
     .l-about__img img{
         width: 80vw;
-    }
-
-    .l-about__text button {
-        width: 90vw;
-        height: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 8px;
     }
 
     .c-about__illust {
@@ -447,11 +375,6 @@
         transform: translateX(-50%);
     }
 
-    .c-allitems__link {
-        width: 85vw;
-        height: 55px;
-    }
-
     .c-allitems__illust {
         width: 180px;
         height: auto;
@@ -485,12 +408,7 @@
         transform: translateX(-50%);
     }
 
-    .l-magazine__link button {
-        width: 90vw;
-        height: 50px;
-    }
-
-.c-magazine__illust {
+    .c-magazine__illust {
         top: 80px;
         left: 50%;
         transform: translateX(-50%);
@@ -502,7 +420,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     /* PC style */
 
     /* about */
@@ -517,11 +435,6 @@
 
     .l-about__img img{
         width: 40vw;
-    }
-
-    .l-about__text button {
-        width: 230px;
-        padding: 15px 0;
     }
 
     .c-about__illust {
@@ -597,11 +510,6 @@
         left: 100px;
     }
 
-    .c-allitems__link {
-        width: 200px;
-        height: 50px;
-    }
-
     .c-allitems__illust {
         width: 180px;
         height: auto;
@@ -630,11 +538,6 @@
         width: auto;
         height: 23vw;
         border-radius: 10px;
-    }
-
-    .l-magazine__link button {
-        width: 200px;
-        height: 50px;
     }
 
     .c-magazine__illust {

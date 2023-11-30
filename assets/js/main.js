@@ -8,10 +8,10 @@ $(function () {
     $(document).scroll(function () {
         var distance = $(this).scrollTop(); //スクロールした距離を取得
         if (scrollend <= distance) {
-            changeArea.fadeOut();
+            changeArea.fadeOut(50);
             header.addClass('change-color');
         } else {
-            changeArea.fadeIn();
+            changeArea.fadeIn(50);
             header.removeClass('change-color');
         }
     });
@@ -28,8 +28,6 @@ $(function () {
         $('.l-header__top').toggleClass('active');
         $('.l-header__logo').toggleClass('active');
         $('.l-header__menu').toggleClass('active');
-        $('.c-logo__white').toggleClass('active');
-        $('.c-logo__black').toggleClass('active');
         $('.l-header__link').toggleClass('active');
         $('.c-contact').toggleClass('active');
         $('.c-search').toggleClass('active');
@@ -70,40 +68,33 @@ $(function () {
 
 
 $(function () {
-    let flag;
-    let flag1;
-    let flag2;
-
-    flag = true;
-    flag1 = 0;
-    flag2 = 0;
-
     const b = $('.button-bbb');
     const c = $('.button-ccc');
+    // 現在どちらが表示されているか判定用
+    let flag1 = true;
+    let flag2 = true;
+    // 2連続でクリックしたか判定用
+    let count1 = 0;
+    let count2 = 0;
 
     b.addClass("down");
     $(".bbb").click(function () {
-        // b.next().slideToggle(500);
-        flag2++;
+        flag1 = true;
+        flag2 = false;
+        count1++;
+        c.removeClass("up");
+        c.addClass("down");
+        c.addClass("active");
 
-        if (flag1 === 0) {
-
-            // if (flag) {
-            //     b.removeClass("down");
-            //     b.addClass("up");
-            //     c.addClass("active");
-            //     flag = false;
-            // } else if (flag1 === 2) {
-            //     b.removeClass("up");
-            //     c.removeClass("active");
-            //     b.addClass("down");
-            //     flag = true;
-            //     flag1 = 0;
-            //     flag2 = 0;
-            // }
+        if (count1 === 2) {
+            b.removeClass("active");
+            c.removeClass("active");
+            b.removeClass("up");
+            b.addClass("down");
+            count1 = 0;
+            count2 = 0;
+        } else if (flag1) {
             const z = $(b).hasClass('down');
-            c.removeClass("up");
-            c.addClass("down");
             if (z) {
                 b.removeClass("down");
                 b.addClass("up");
@@ -111,34 +102,27 @@ $(function () {
                 b.removeClass("up");
                 b.addClass("down");
             }
-
-        } else {
-            flag1 = 0;
         }
     });
 
     c.addClass("down");
     $(".ccc").click(function () {
-        // b.next().slideToggle(500);
-        flag1++;
-        if (flag2 === 0) {
+        flag2 = true;
+        flag1 = false;
+        count2++;
+        b.removeClass("up");
+        b.addClass("down");
+        b.addClass("active");
 
-            // if (flag) {
-            //     c.removeClass("down");
-            //     c.addClass("up");
-            //     b.addClass("active");
-            //     flag = false;
-            // } else if (flag2 === 2) {
-            //     c.removeClass("up");
-            //     b.removeClass("active");
-            //     c.addClass("down");
-            //     flag = true;
-            //     flag1 = 0;
-            //     flag2 = 0;
-            // }
+        if (count2 === 2) {
+            b.removeClass("active");
+            c.removeClass("active");
+            c.removeClass("up");
+            c.addClass("down");
+            count1 = 0;
+            count2 = 0;
+        } else if (flag2) {
             const x = $(c).hasClass('down');
-            b.removeClass("up");
-            b.addClass("down");
             if (x) {
                 c.removeClass("down");
                 c.addClass("up");
@@ -146,8 +130,6 @@ $(function () {
                 c.removeClass("up");
                 c.addClass("down");
             }
-        } else {
-            flag2 = 0;
         }
     });
 });
@@ -190,11 +172,11 @@ $('.p-pickup__slider').slick({
 });
 
 // allitem, magazine
-const mql = window.matchMedia('screen and (max-width: 768px)');
+const mql = window.matchMedia('screen and (max-width: 899px)');
 
 function checkBreakPoint(mql) {
     if (mql.matches) {
-        // スマホ向け（768px以下のとき）
+        // スマホ向け（899px以下のとき）
         $('.l-allitems__list').not('.slick-initialized').slick({
             nextArrow: '<img src="./assets/images/arrow_right.png" class="slide-arrow next-arrow">',
             prevArrow: '<div class="prev-arrow"></div>',

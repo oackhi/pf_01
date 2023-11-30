@@ -56,6 +56,7 @@ footer {
     padding: 1px 20px;
     color: #fff;
     background-color: #404040;
+    border: 1px solid #404040;
 }
 
 .l-footer__copyright {
@@ -64,7 +65,7 @@ footer {
     font-size: 11px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 899px) {
     /* SP style */
     footer {
         padding: 130px 30px 30px;
@@ -112,7 +113,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     /* PC style */
     footer {
         padding: 130px 100px 30px 100px;
