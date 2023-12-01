@@ -25,7 +25,7 @@ html {
 }
 
 .l-about a, .l-relationship a, #sendemail,
-header a, footer a, button {
+header a, footer a, button, .c-link__item {
     cursor: pointer;
 }
 

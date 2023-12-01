@@ -22,13 +22,14 @@ $(function () {
 $(function () {
     let flag = true;
     let flags = [0, 0];
-    let classes = ['ppp', 'qqq'];
+    let classes = ['p-items__wrap', 'p-magazine__wrap'];
 
     function toggleClasses() {
         $('.l-header__top').toggleClass('active');
         $('.l-header__logo').toggleClass('active');
         $('.l-header__menu').toggleClass('active');
         $('.l-header__link').toggleClass('active');
+        $('.l-header__top--wrap').toggleClass('active');
         $('.c-contact').toggleClass('active');
         $('.c-search').toggleClass('active');
         $('.c-login').toggleClass('active');
@@ -39,20 +40,20 @@ $(function () {
         $(`.${buttonClass}`).click(function () {
             classes.forEach((cls, clsIndex) => {
                 if (clsIndex === index) {
-                    $(`.${cls}`).addClass("iii");
+                    $(`.${cls}`).addClass("count-result");
                     flags[clsIndex]++;
                 } else {
-                    $(`.${cls}`).removeClass("iii");
+                    $(`.${cls}`).removeClass("count-result");
                 }
             });
 
             if (flag) {
-                $(".abc").slideToggle(".ccc");
+                $(".wrap-active").slideToggle(".magazine-list");
                 flag = false;
                 toggleClasses();
             } else if (flags[index] === 2) {
-                $(`.${classes[index]}`).removeClass("iii");
-                $(".abc").slideToggle(".ccc");
+                $(`.${classes[index]}`).removeClass("count-result");
+                $(".wrap-active").slideToggle(".magazine-list");
                 toggleClasses();
                 flag = true;
                 flags = [0, 0];
@@ -60,7 +61,7 @@ $(function () {
         });
     }
 
-    ['bbb', 'ccc'].forEach((cls, index) => {
+    ['items-list', 'magazine-list'].forEach((cls, index) => {
         clickHandler(index, cls);
     });
 });
@@ -68,8 +69,8 @@ $(function () {
 
 
 $(function () {
-    const b = $('.button-bbb');
-    const c = $('.button-ccc');
+    const b = $('.button-itemsList');
+    const c = $('.button-magazineList');
     // 現在どちらが表示されているか判定用
     let flag1 = true;
     let flag2 = true;
@@ -78,7 +79,7 @@ $(function () {
     let count2 = 0;
 
     b.addClass("down");
-    $(".bbb").click(function () {
+    $(".items-list").click(function () {
         flag1 = true;
         flag2 = false;
         count1++;
@@ -106,7 +107,7 @@ $(function () {
     });
 
     c.addClass("down");
-    $(".ccc").click(function () {
+    $(".magazine-list").click(function () {
         flag2 = true;
         flag1 = false;
         count2++;

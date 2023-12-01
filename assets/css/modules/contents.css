@@ -1,38 +1,3 @@
-/* header */
-.c-contact {
-    background: url(../../images/icon_contactWhite.png) left 0 top -1px no-repeat;
-    background-size: 25px;
-}
-.c-contact.active {
-    background: url(../../images/icon_contactBlack.png) left 0 top -2px no-repeat;
-    background-size: 17px;
-}
-
-.c-search {
-    background: url(../../images/icon_searchWhite.png) left 0 top -1px no-repeat;
-}
-.c-search.active {
-    background: url(../../images/icon_searchBlack.png) left 0 top -1px no-repeat;
-    background-size: 15px;
-}
-
-.c-login {
-    background: url(../../images/icon_loginWhite.png) left 0 top -1px no-repeat;
-}
-.c-login.active {
-    background: url(../../images/icon_loginBlack.png) left 0 top -1px no-repeat;
-    background-size: 15px;
-}
-
-.c-cart {
-    background: url(../../images/icon_cartWhite.png) left 0 top -1px no-repeat;
-}
-.c-cart.active {
-    background: url(../../images/icon_cartBlack.png) left 0 top -1px no-repeat;
-    background-size: 15px;
-}
-
-
 /* pickup */
 .c-starterset {
     background-image: url("../../images/pickup_01.jpg");
@@ -107,17 +72,89 @@
     background-image: url("../../images/instagram_08.jpg");
 }
 
+@media screen and (max-width: 899px) {
+    /* SP style */
+    .c-login, .c-cart {
+        position: relative;
+    }
+    .c-login::before,
+    .c-cart::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-size: contain;
+        vertical-align: middle;
+    }
+
+    .c-login::before {
+        background-image: url(../../images/icon_loginWhite.png);
+    }
+
+    .c-cart::before {
+    background-image: url(../../images/icon_cartWhite.png)
+    }
+
+    .l-header__link li {
+        padding-top:20px;
+        padding-left: 0;
+    }
+    .l-header__top a {
+        white-space: nowrap;
+    }
+}
+
 @media screen and (min-width: 900px) {
     /* PC style */
 
-    /* allitems */
-    .c-allitems1:hover {
-        background-image: url("../../images/allitem_herb02.jpg");
-        transition: 0.5s;
-    }
+    /* header */
+.c-contact {
+    background: url(../../images/icon_contactWhite.png) left 0 top -1px no-repeat;
+    background-size: 25px;
+}
 
-    .c-allitems2:hover {
-        background-image: url("../../images/allitem_strawberry02.jpeg");
-        transition: 0.5s;
-    }
+.c-contact.active {
+    background: url(../../images/icon_contactBlack.png) left 0 top -2px no-repeat;
+    background-size: 17px;
+}
+
+.c-search {
+    background: url(../../images/icon_searchWhite.png) left 0 top -1px no-repeat;
+}
+.c-search.active {
+    background: url(../../images/icon_searchBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
+}
+
+.c-login {
+    background: url(../../images/icon_loginWhite.png) left 0 top -1px no-repeat;
+}
+.c-login.active {
+    background: url(../../images/icon_loginBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
+}
+
+.c-cart {
+    background: url(../../images/icon_cartWhite.png) left 0 top -1px no-repeat;
+}
+.c-cart.active {
+    background: url(../../images/icon_cartBlack.png) left 0 top -1px no-repeat;
+    background-size: 15px;
+}
+
+/* allitems */
+.c-allitems1:hover {
+    background-image: url("../../images/allitem_herb02.jpg");
+    transition: 0.5s;
+}
+
+.c-allitems2:hover {
+    background-image: url("../../images/allitem_strawberry02.jpeg");
+    transition: 0.5s;
+}
 }
