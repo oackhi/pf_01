@@ -426,7 +426,7 @@
     /* about */
     .l-about {
         display: flex;
-        margin: 80px 80px 0;
+        padding: 80px 80px 0;
     }
 
     .l-about__img {

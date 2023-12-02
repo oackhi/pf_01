@@ -54,11 +54,8 @@ header {
 }
 
 .l-header__link ul {
-    justify-content:  end;
-}
-
-.l-header__link ul {
     display: flex;
+    justify-content:  end;
 }
 
 .l-header__link li:last-child {
@@ -276,16 +273,33 @@ header {
 @media screen and (min-width: 900px) {
     /* PC style */
     .l-header__logo {
+        position: absolute;
         width: 50px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        top: -60px;
+        left: 0;
+        transform: translateX(-50%);
     }
 
+    .l-header__title.active {
+        padding-top: 0px;
+    }
+ 
     .l-header__menu,
     .l-header__link {
         flex: 4;
     }
     .l-header__title {
         flex: 1;
+    }
+
+    .l-header__title {
+        padding-top: 70px;
+    }
+
+    .l-header__title a {
+        position: relative;
+        /* padding-top: 50px; */
     }
 
     .l-header__top {
@@ -375,5 +389,28 @@ header {
     .button-magazineList.down.active::before {
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sp_menu {
+        font-size: 10px;
+    }
+
+    #sp_menu::after {
+        top: 3px;
+        left: 42px;
+    }
+
+    .l-header__top {
+        padding: 25px 10px 15px;
+    }
+
+    .l-header__link li {
+        font-size: 11px;
+    }
+    
+    .c-login::before, .c-cart::before {
+        top: -15px;
     }
 }

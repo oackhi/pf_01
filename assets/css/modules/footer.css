@@ -25,7 +25,7 @@ footer {
 }
 
 /* center */
-.l-footer__center {
+.l-footer__center li {
    display: grid;
    text-decoration: none;
 }
@@ -36,9 +36,28 @@ footer {
     text-decoration: none;
 }
 
-.l-footer__center a:after {
+/* .l-footer__center a:after {
     content: ">";
     margin-left: 7px;
+} */
+.l-footer__center li {
+    position: relative;
+}
+
+.l-footer__center a:hover {
+    text-decoration: underline;
+}
+
+.l-footer__center a::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: solid 1px #000;
+    border-right: solid 1px #000;
+    transform: rotate(45deg);
+    margin-top: 3px;
+    margin-left: 5px;
 }
 
 /* right */
@@ -53,7 +72,6 @@ footer {
 }
 
 #sendemail {
-    padding: 1px 20px;
     color: #fff;
     background-color: #404040;
     border: 1px solid #404040;
@@ -83,7 +101,7 @@ footer {
     }
 
     /*  center */
-    .l-footer__center {
+    .l-footer__center li {
         width: 100%;
         margin-top: 30px;
         grid-template-columns: repeat(2, 1fr);
@@ -110,6 +128,10 @@ footer {
     #sendemail {
         width: 18%;
         height: 45px;
+    }
+
+    .return {
+        padding: 15px;
     }
 }
 
@@ -147,7 +169,7 @@ footer {
     }
 
     /* center */
-    .l-footer__center {
+    .l-footer__center li {
         width: 55%;
         grid-template-columns: 10vw 10vw 9vw 10vw;        
         grid-template-rows: 45px 45px 45px;
@@ -171,6 +193,6 @@ footer {
     #sendemail {
         width: 90px;
         height: 40px;
+        padding: 1px 20px;
     }
-    
 }

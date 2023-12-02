@@ -8,11 +8,13 @@ $(function () {
     $(document).scroll(function () {
         var distance = $(this).scrollTop(); //スクロールした距離を取得
         if (scrollend <= distance) {
-            changeArea.fadeOut(50);
+            changeArea.fadeOut(200);
             header.addClass('change-color');
+            $('.l-header__title').addClass('active');
         } else {
-            changeArea.fadeIn(50);
+            changeArea.fadeIn(200);
             header.removeClass('change-color');
+            $('.l-header__title').removeClass('active');
         }
     });
     $('.change-color').toggleClass('active');
@@ -68,6 +70,35 @@ $(function () {
 
 
 
+function controlAccordion(target, nexttarget, flag, nextflag, count, nextcount) {
+    flag = true;
+    nextflag = false;
+    count++;
+    nexttarget.removeClass("up");
+    nexttarget.addClass("down");
+    nexttarget.addClass("active");
+
+    if (count === 2) {
+        target.removeClass("active");
+        nexttarget.removeClass("active");
+        target.removeClass("up");
+        target.addClass("down");
+        count = 0;
+        nextcount = 0;
+    } else if (flag) {
+        const z = $(target).hasClass('down');
+        if (z) {
+            target.removeClass("down");
+            target.addClass("up");
+        } else {
+            target.removeClass("up");
+            target.addClass("down");
+        }
+    }
+
+    return [flag, nextflag, count, nextcount];
+}
+
 $(function () {
     const b = $('.button-itemsList');
     const c = $('.button-magazineList');
@@ -80,58 +111,12 @@ $(function () {
 
     b.addClass("down");
     $(".items-list").click(function () {
-        flag1 = true;
-        flag2 = false;
-        count1++;
-        c.removeClass("up");
-        c.addClass("down");
-        c.addClass("active");
-
-        if (count1 === 2) {
-            b.removeClass("active");
-            c.removeClass("active");
-            b.removeClass("up");
-            b.addClass("down");
-            count1 = 0;
-            count2 = 0;
-        } else if (flag1) {
-            const z = $(b).hasClass('down');
-            if (z) {
-                b.removeClass("down");
-                b.addClass("up");
-            } else {
-                b.removeClass("up");
-                b.addClass("down");
-            }
-        }
+        [flag1, flag2, count1, count2] = controlAccordion(b, c, flag1, flag2, count1, count2);
     });
 
     c.addClass("down");
     $(".magazine-list").click(function () {
-        flag2 = true;
-        flag1 = false;
-        count2++;
-        b.removeClass("up");
-        b.addClass("down");
-        b.addClass("active");
-
-        if (count2 === 2) {
-            b.removeClass("active");
-            c.removeClass("active");
-            c.removeClass("up");
-            c.addClass("down");
-            count1 = 0;
-            count2 = 0;
-        } else if (flag2) {
-            const x = $(c).hasClass('down');
-            if (x) {
-                c.removeClass("down");
-                c.addClass("up");
-            } else {
-                c.removeClass("up");
-                c.addClass("down");
-            }
-        }
+        [flag2, flag1, count2, count1] = controlAccordion(c, b, flag2, flag1, count2, count1);
     });
 });
 

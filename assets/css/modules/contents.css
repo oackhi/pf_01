@@ -84,7 +84,7 @@
         display: inline-block;
         width: 15px;
         height: 15px;
-        top: 0;
+        top: -15px;
         left: 0;
         right: 0;
         margin: auto;
@@ -101,7 +101,6 @@
     }
 
     .l-header__link li {
-        padding-top:20px;
         padding-left: 0;
     }
     .l-header__top a {
