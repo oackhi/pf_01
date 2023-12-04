@@ -148,6 +148,10 @@ header {
         display: none;
     }
 
+    .l-header__link ul {
+        padding-top: 15px;
+    }
+
     .pc_nav {
         display: none;
     }
@@ -419,6 +423,10 @@ header {
 
     .l-header__top {
         padding: 25px 10px 15px;
+    }
+
+    .l-header__link ul {
+        padding-top: 15px;
     }
 
     .l-header__link li {
