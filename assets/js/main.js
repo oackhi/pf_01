@@ -2,7 +2,7 @@
 $(function () {
     var navPos = $('#header').offset().top;
     var navHeight = $('#header').outerHeight();
-    var scrollend = $('#main-area').offset().top - 54; //ページ上部からの距離を取得
+    var scrollend = $('#main-area').offset().top - 130; //ページ上部からの距離を取得
     var changeArea = $('.js-change-area');
     var header = $('.js-header');
     $(document).scroll(function () {
@@ -10,11 +10,11 @@ $(function () {
         if (scrollend <= distance) {
             changeArea.fadeOut(200);
             header.addClass('change-color');
-            $('.l-header__title').addClass('active');
+            $('.l-header__title, .p-items__wrap, .p-magazine__wrap').addClass('active');
         } else {
             changeArea.fadeIn(200);
             header.removeClass('change-color');
-            $('.l-header__title').removeClass('active');
+            $('.l-header__title, .p-items__wrap, .p-magazine__wrap').removeClass('active');
         }
     });
     $('.change-color').toggleClass('active');
