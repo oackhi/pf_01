@@ -82,9 +82,9 @@
         position: absolute;
         content: '';
         display: inline-block;
-        width: 15px;
-        height: 15px;
-        top: -15px;
+        width: 16px;
+        height: 16px;
+        top: -20px;
         left: 0;
         right: 0;
         margin: auto;

@@ -37,12 +37,12 @@ header {
 .p-items__wrap, .p-magazine__wrap {
     display: none;
     position: absolute;
-    top: 170px;
-    left: 0;
-    font-size: 13px;
+    top: 150px;
+    left: 5px;
+    font-size: 12px;
     font-weight: bold;
     text-align: left;
-    line-height: 25px;
+    line-height: 45px;
 }
 
 .p-items__wrap a:hover, .p-magazine__wrap a:hover {
@@ -103,17 +103,6 @@ header {
 }
 
 @media screen and (max-width: 899px) {
-    /* SP style */
-    /* .l-header__logo {
-        width: 35px;
-    } */
-
-
-    /* .l-header__top {
-        padding: 40px 45px;
-    }
- */
-
     .l-header__logo {
         position: absolute;
         width: 35px;
